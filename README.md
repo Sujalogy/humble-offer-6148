@@ -1,3 +1,15 @@
 # humble-offer-6148
-## aeropostale
-<p>this is a group project</p>
+## Website =>  Aeropostale
+
+#### // this is index.html description ->
+ - HomePage 
+{root folder name}
+          |_
+            |_
+##           O=> index.html =>
+    ###                             (three stages in index.html)
+###                                             |
+                                    ____________|______________ 
+                                    |            |            |
+##                               (header)      (body)      (footer)
+
