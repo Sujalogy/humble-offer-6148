@@ -3,6 +3,20 @@
     "development"
   ],
   "hints": {
-    "highest-available-document-mode": "off"
+    "highest-available-document-mode": "off",
+    "button-type": "off",
+    "detect-css-reflows/layout": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-align-last",
+          "text-size-adjust",
+          "min-height: fit-content"
+        ]
+      }
+    ],
+    "axe/name-role-value": "off",
+    "axe/forms": "off"
   }
 }
