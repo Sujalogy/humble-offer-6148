@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <title>Home Page</title>
 </head>
 <body>
-    
+<!-- ! =========== + 2 levels of nav bar + {starts} ===========-->
+<nav>
+    <!-- -=-=-=-=--=--= sliding nav bar {starts} =-=-=-=--==-=-=-=- -->
+    <div class="navOne">
+        <button id="left" class="arrow" onclick="prevSlide()"> <p> &#8249; </p> </button>
+        <p id="sliders" class="sliders">Free Ship Over $50!</p>
+        <button id="right" class="arrow" onclick="nextSlide()"> <p> &#8250;</p> </button>
+    </div>
+    <!--  -=-=-=-=--=--= sliding nav bar {ends} =-=-=-=--==-=-=-=- -->
+
+    <!-- -=-=-=-=--=--= normal nav bar {starts} -=-=-=-=--=--= -->
+    <div class="navTwo">
+        <!-- Category {starts} -->
+        <div class="categoryLinks">
+            <div id="Women" class="Women">
+                <a href="#">Women</a>
+            </div>
+            <!-- dropdown for Women Categories {starts} -->
+            <!-- dropdown for Women Categories {ends} -->
+            <div id="Men" class="Men">
+                <a href="#">Men</a>
+            </div>
+            <!-- dropdown for Men Categories {starts} -->
+            <!-- dropdown for Men Categories {ends} -->
+            <div id="Jeans" class="Jeans">
+                <a href="#">Jeans</a>
+            </div>
+            <!-- dropdown for Jeans Categories {starts} -->
+            <!-- dropdown for Jeans Categories {ends} -->
+            <div id="Clearance" class="Clearance">
+                <a href="#">Clearance</a>
+            </div>
+            <!-- dropdown for Clearance Categories {starts} -->
+            <!-- dropdown for Clearance Categories {ends} -->
+        </div>
+        <!-- Category {ends} -->
+
+        <!-- Logo {starts} -->
+        <div class="logo">
+            <div class="img">
+                <a href="index.html">
+                    <img src="/images/logo2.png" alt="logo+link">
+                </a>
+            </div>
+        </div>
+        <!-- Logo {ends} -->
+            
+        <!-- login, wishlist, cart and search {starts}-->
+        <div class="Loginlinks">
+            <div class="search">
+                <input type="search" placeholder="Search" />
+            </div>
+            <div class="wishlist">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2767/2767018.png" alt="heart">
+                </a>
+            </div>
+            <div class="locate">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="location">
+                </a>
+            </div>
+            <div class="login">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9308/9308008.png" alt="user">
+                </a>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/128/102/102665.png" alt="bag">
+                </a>
+            </div>
+        </div>
+        <!-- login, wishlist, cart and search {ends}-->
+    </div>
+    <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
+    </nav>
+<!-- ! =========== + 2 levels of nav bar + {ends} ===========-->
 </body>
+<script src="/script/index.js"></script>
 </html>
