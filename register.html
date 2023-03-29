@@ -9,9 +9,34 @@
 </head>
 <body>
     <div id="bodyContainer">
+        <!-- this for account Dropdown Menu  -->
         <div id="accountMenu">
+            
+            <div class="dropdown">
+                <hr>
+                <div class="select">
+                    <span class="selected" id="account">ACCOUNT SETTING</span>
+                    <div class="caret"></div>
+                </div>
+                    <ul class="menu">
+                        <li><a href="./register.html">Create Account</a></li>
+                    </ul>
+             </div>  
+             <div class="dropdown">
+                <hr>
+                <div class="select">
+                    <span class="selected">SHOP CONFIDENTLY</span>
+                    <div class="caret"></div>
+                </div>
+                    <ul class="menu">
+                        <li><a href="./privacyPolicyPage.html">Privacy Policy</a></li>
+                        <li><a href="#">Secure Shopping</a></li>
 
+                    </ul>
+             </div>      
         </div>
+
+        <!-- Here is starting form page  -->
         <div id="registerForm">
 
             <form>
@@ -22,16 +47,22 @@
                 <br>
                 <input type="text" placeholder="Phone*" id="phone">
                 <br>
-            
-                <select id="gender">
-                    <option value="">Select</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
+                <fieldset id="genderFeild" class="genderField"><legend>
+                    <label for="gender">Gender</label>
+                </legend>
+                
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                
+                </fieldset>
                 <br>
-                <fieldset><legend>Birth Month</legend>
+                <div id="fieldSelect">
+                <fieldset id="monthField"><legend>Birth Month</legend>
                     <select  id="birthMonth">
-                        <option value=''>--Select Month--</option>
+                        <option value=''>Select Month</option>
                         <option  value='1'>Janaury</option>
                         <option value='2'>February</option>
                         <option value='3'>March</option>
@@ -46,75 +77,107 @@
                         <option value='12'>December</option>
                     </select>
                 </fieldset>
-                <select  id="birthDate">
-                    <option value="">--Select Birth Date</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-                </select>
-                <br>
+
                 
+                <fieldset id="dateField"> 
+                    <legend> <label for="birthDate">Birth Date</label> </legend>
+                        <select  id="birthDate">
+                            <option value="">Select Birth Date</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+              
+                </fieldset>
+             
+                </div>
+                <br>
 
                 <input type="email" placeholder="Email*" id="email">
                 <br>
                 <input type="email" placeholder="Confirm Email*" id="ConfirmEmail">
                 <br>
-                <input type="password" placeholder="Password*">
+                <input type="password" placeholder="Password*" id="password">
                 <br>
-                <input type="password" placeholder="Confirm Password*">
+                <input type="password" placeholder="Confirm Password*" id="confirmPassword">
                 <br>
+                <div id="declartion">
 
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">Please add me to Aeropostale's email list. Aeropostale does not share or sell personal info.</label>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" id="check"><span id="text">Please add me to Aeropostale's email list. Aeropostale  does not share or sell personal info.</span></label>
+                </div>
                 <br>
-                <button id="apply">Apply</button>
-
-
-                
-                
-
-
-
+                <input type="submit" value="Apply" id="apply">
                
+
                 
             </form>
 
+
+                
+                
+            
+            
+
+            
+            
         </div>
+                
+                
         <div id="needHelp">
-
+            <div id="help">
+            <h4>Need Help</h4>
+            <br>
+            <p>Live Chat</p>
+            <p>9 AM to 11 PM EST</p>
+            <P>7 Days a Week</P>
+            <a href="">Call Us</a>
+            <br>
+            <br>
+            <br>
+            <p>Call Today Toll Free</p>
+            <p>Available 8 AM to 2 Am est</p>
+            <a href="">1-877-289-2376</a>
+            </div>
+            <br>
+            <a href="./privacyPolicyPage.html">Privacy Policy</a>
+            <br>
+            <a href="">Secure Shopping</a>
+            
         </div>
 
-    </div>
+    </div>  <!--body container div -->
 
 </body>
+<script src="./script/register.js"></script>
 </html>
 
 
