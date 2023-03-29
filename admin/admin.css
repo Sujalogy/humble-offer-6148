@@ -25,6 +25,15 @@
     --box-shadow : 0 2rem 3rem var(--color-light);
 }
 
+.dark-theme-variables{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -143,11 +152,12 @@ aside .top{
 aside .logo{
     display: flex;
     gap: 0.8rem;
+    margin-left: 1.5rem;
 }
 
 aside .logo img{
-    width: 2rem;
-    height: 2rem;
+    width: 8rem;
+    height: 5rem;
 }
 
 aside .close{
@@ -428,6 +438,10 @@ main .recent-orders a{
         grid-template-columns: 7rem auto 23rem;
     }
 
+    aside .logo{
+        margin-left: 0;
+    }
+
     aside .logo h2{
         display: none;
     }
@@ -476,7 +490,7 @@ main .recent-orders a{
 
     aside{
         position: fixed;
-        left: 0;
+        left: -100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -484,6 +498,13 @@ main .recent-orders a{
         height: 100vh;
         padding: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
     }
 
     aside .logo{
@@ -511,6 +532,7 @@ main .recent-orders a{
     aside .close{
         display: inline-block;
         cursor: pointer;
+        margin-top: 1.5rem;
     }
 
     main{

@@ -4,5 +4,6 @@
         "navone",
         "Sitewide",
         "Visuelt"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
