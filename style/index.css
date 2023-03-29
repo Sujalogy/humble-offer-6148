@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* ? ===========================here is navOne {starts}  */
+.navOne {
+    display: flex;
+    justify-content: space-between;
+    background-color: #172749;
+    align-items: center;
+    height: 42px;
+}
+
+.navOne > .arrow {
+    height: 46px;
+    width: 20px;
+    border: none;
+    background-color: transparent; 
+} .navOne > .arrow > p {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    font-weight: 100;
+}
+
+.navOne > .sliders {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} .sliders {
+    animation: slide 5s infinite;
+} @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    } 20% {
+        opacity: 1;
+        transform: translateX(0);
+    } 80% {
+        opacity: 1;
+        transform: translateX(0);
+    } 100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+/* ? ===========================here is navOne {ends}  */
+
+/* ? ===========================here is navTwo {starts}  */
+.navTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navTwo > .categoryLinks {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} .categoryLinks a {
+    text-decoration: none;
+    color: #172749;
+    padding: 4px 0px 4px 0px;
+} .categoryLinks a:hover {
+    border-bottom: 2px solid #172749;
+    cursor: pointer;
+}
+
+.navTwo > .logo img {
+    width: 128px;
+}
+
+.navTwo > .Loginlinks {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;    
+} .Loginlinks img {
+    width: 20px;
+    height: 20px;
+}
+/* ? ===========================here is navTwo {ends}  */
