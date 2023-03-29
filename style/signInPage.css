@@ -1,0 +1,88 @@
+#container{
+    width: 70%;
+    margin-top: 200px;
+    display: flex;
+    gap: 40px;
+    margin: auto;
+    font-size: smaller;
+    color: rgb(150, 136, 136);
+}
+h3{
+    color:rgb(11, 20, 57);
+    margin: 0;
+    padding: 0;
+}
+form{
+    display: grid;
+    gap: 15px;
+}
+
+.ptag{
+    margin-top: -1px;
+    font-size: small;
+}
+#registeredCustomer
+{
+    /* width: ; */
+    border: 1px solid #c21818;
+    /* align-items: center; */
+    
+}
+form{
+    width: 100%;
+}
+#registeredCustomer #email,#password
+{
+    width: 97%;
+    height: 30px;
+
+}
+
+#checkParentTag{
+    display: flex;
+    justify-content: space-between;
+}
+#sign{
+    width: 200px;
+    text-align: center;
+    background-color: rgb(23,39,74);
+    border: none;
+    color: white;
+    height: 30px;
+    cursor: pointer;
+
+}
+#sign:hover{
+    background-color: white;
+    color: black;
+
+}
+#facebook{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+}
+#facebook img{
+    width: 20px;
+    border: 1px solid #000;
+}
+
+
+
+
+
+/* new customer css here */
+#createAccount{
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-size: small;
+}
+#information{
+    /* font-size: sma; */
+}
+#information h5{
+    margin-bottom: -14px;
+}

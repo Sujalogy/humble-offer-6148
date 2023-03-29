@@ -1,5 +1,241 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 #bodyContainer{
-    width: 80%;
+    width: 1000px;
     margin: auto;
     justify-content: space-between;
+    /* border: 1px solid limegreen; */
+    display: flex;
+    box-sizing: border-box;
 }
+
+
+
+#registerForm{
+    width: 320px;
+}
+
+
+
+/*  form css is here */
+form{
+    display: grid;
+    
+    /* border:1px solid red; */
+    justify-content: center;
+    /* text-align: center; */
+    align-content: center;
+    align-items: center;
+
+}
+form > input{
+    width: 320px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+
+/* gender operation  feild Setting is here*/
+#fieldSelect{
+    display: flex;
+    /* border:1px solid red; */
+    justify-content: center;
+    width: 280px;
+    margin: auto;
+}
+.genderField{
+    width: 300px;
+    border: 1px solid green;
+    margin: auto;
+    
+}
+.genderField>#gender{
+    width: 300px;
+    border: none;
+    
+}
+#monthField {
+    width: 150px;
+}
+#monthField > #birthMonth {
+    width: 160px;
+    border: none;
+
+}
+#dateField {
+    width: 50px;
+}
+ #dateField > #birthDate {
+     width: 105px;
+     border: none;
+}
+
+
+
+
+
+
+ /* apply button  css */
+ form #apply{
+    background-color: blue;
+    width: 200px;
+    height: 30px;
+   margin: auto;
+   border: none;
+   /* text-decoration: none; */
+   border-radius: 10px;
+   text-align: center;
+   border: 1px solid #000;
+}
+
+
+form #apply:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+}   
+
+
+/* checkbox */
+#checkbox{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+#declartion>label{
+    font-size: 20px;
+    border: 1px solid white;
+    display: block;
+    /* border: 1px solid #000; */
+}
+#declartion{
+/* border: 1px solid #b91f1f; */
+text-align: justify;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+#check{
+    text-align: justify;
+    border: 1px solid #000;
+    
+}
+#text{
+    font-size: small;
+}
+
+/* Third part Need help wala */
+#needHelp a{
+color: rgb(0,94,184);
+}
+
+#help{
+    margin-top: 30px;
+    font-size: smaller;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    background-color: rgb(218, 218, 226);
+    line-height: 5px;
+}
+
+
+
+/* Acccount setting Drop menu is style here */
+.dropdown{
+    /* border: 1px solid #000; */
+    min-width: 11em;
+    position: relative;
+    margin: 2em;
+
+    
+}
+
+.dropdown a{
+    text-decoration: none;
+}
+.dropdown a:hover{
+    text-decoration: underline;
+}
+.select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.select-dropdown{
+    margin-bottom: 100px;
+}
+
+/* .select-clicked{
+    /* border: 2px #c6bbb3 solid; */
+    /* box-shadow: 0 0 0.8em #9a266a; */
+ 
+
+.select:hover{
+    background:white;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid black;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu {
+    /* border: 1px solid #000; */
+    list-style: none;
+    padding: 0.2em 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}   
+
+.menu li{
+    padding: 0.7em 0.5em;   
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    /* background-color: red; */
+}
+
+.menu-open
+{
+    display: block;
+    opacity: 1;
+}
+
+/* #account{
+    
+
+} */
