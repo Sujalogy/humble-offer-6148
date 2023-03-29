@@ -89,12 +89,13 @@ form > input{
  form #apply{
     background-color: blue;
     width: 200px;
-    height: 30px;
-   margin: auto;
+    /* height: 30px; */
+   /* margin: auto; */
    border: none;
+   color: white;
    /* text-decoration: none; */
    border-radius: 10px;
-   text-align: center;
+   /* text-align: center; */
    border: 1px solid #000;
 }
 
