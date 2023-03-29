@@ -1,16 +1,21 @@
 #container{
-    width: 70%;
+    width: 50%;
     margin-top: 200px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 40px;
     margin: auto;
     font-size: smaller;
     color: rgb(150, 136, 136);
 }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 h3{
-    color:rgb(11, 20, 57);
+    color:rgb(30, 46, 108);
     margin: 0;
     padding: 0;
+    font-size: 30px;
 }
 form{
     display: grid;
@@ -24,7 +29,7 @@ form{
 #registeredCustomer
 {
     /* width: ; */
-    border: 1px solid #c21818;
+    /* border: 1px solid #c21818; */
     /* align-items: center; */
     
 }
@@ -85,4 +90,34 @@ form{
 }
 #information h5{
     margin-bottom: -14px;
+}
+#createAccount:hover{
+    background-color: rgb(23,39,74);
+    color: white;
+}
+
+
+
+/*  TRACK ORDER CSS */
+#trackOrder{
+    width: 40%;
+    margin: auto;
+    margin-top: 70px;
+}
+#trackOrder input{
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px;
+}
+
+
+#checkStatus{
+    width: 200px;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+#checkStatus:hover{
+    background-color:  rgb(23,39,74);
+    color: white;
 }

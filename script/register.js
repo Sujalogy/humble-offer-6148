@@ -1,10 +1,29 @@
 
 
+let lsdata=JSON.parse(localStorage.getItem("register"))||[]
 
 let form =document.querySelector("form")
 form.addEventListener("submit",(e)=>{
     e.preventDefault()
-submitData()
+    //  I am checking here if user already register so retrun error
+    let email= document.getElementById("email").value
+    let flag=true
+    console.log(lsdata);
+    // lsdata.forEach((item)=>{
+    //     if(item.email===email)
+    //     {
+    //         flag=false
+    //     }
+    // })
+    
+
+
+    if(flag) submitData(); 
+    else{
+        alert("User Already Registerd")
+        return 
+    }
+//  if  email is already registered i am return func
 console.log("sgar");
 })
 
@@ -21,6 +40,9 @@ function submitData()
     let password= document.getElementById("password").value
     let confirmPassword= document.getElementById("confirmPassword").value
     let checkbox= document.getElementById("checkbox").value
+
+
+
 
     let obj={
         name:name+" "+lastName,
@@ -41,7 +63,8 @@ function submitData()
         alert("Password Mismatch")
         return
     }
-    if(name!=""&lastName!=""&phone!=""&gender!=""&birthMonth!=""&birthDate!=""&email!=""&ConfirmEmail!=""&password!=""&confirmPassword!=""&checkbox=="checked")
+    // if(name!=""&lastName!=""&phone!=""&gender!=""&birthMonth!=""&birthDate!=""&email!=""&ConfirmEmail!=""&password!=""&confirmPassword!=""&checkbox=="checked")
+    if(name&&lastName&&phone&&gender&&birthMonth&&birthDate&&email&&ConfirmEmail&&password&&confirmPassword&&checkbox)
     {
         let obj={
             name:name+" "+lastName,
@@ -59,7 +82,11 @@ function submitData()
         alert("Complete every feild")
     }
 
-    
+   
+
+
+
+
    
 
  
@@ -133,3 +160,55 @@ dropdowns.forEach(dropdown=>{
 
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let obj2={
+        //     username:name,
+        //     password:password
+        // }
+        // fetch(`https://masai-api-mocker.herokuapp.com/auth/register`,{
+        //     method:"POST",
+        //     headers:{
+        //         "Content-Type":"Application/json"
+        //     },
+        //     body:JSON.stringify(obj2)
+        // })
+        // .then((res)=>{
+        //      return res.json()
+        // })
+        // .then((data)=>{
+        //     console.log(data);
+        // })
+    
