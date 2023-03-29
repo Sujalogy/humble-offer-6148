@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "dkguptaji001@gmail.com",
+      "password": "guptaji001"
+    },
+    {
+      "username": "dkgu@gmail.com",
+      "password": "hogyayaanhi",
+      "id": "aKmESsU"
+    }
+  ],
+  "products": [
+    {
+      "id": "001",
+      "name": "kids section 1",
+      "price": "2000"
+    },
+    {
+      "id": "002",
+      "name": "kids section 2",
+      "price": "3000"
+    },
+    {
+      "id": "003",
+      "name": "kids section 3",
+      "price": "4000"
+    }
+  ]
+}
