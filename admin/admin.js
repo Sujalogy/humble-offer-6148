@@ -18,12 +18,10 @@ Orders.forEach((order) => {
     const tbody = document.querySelector("table tbody");
 
     const trContent = `
-                            <td>${order.productName}</td>
-                            <td>${order.productId}</td>
-                            <td>${order.paymentStatus}</td>
-                            <td class="${order.shipping === 'Declined' ? 'danger' :
-                             order.shipping === 'pending' ? 'warning' : 'primary'}">${order.shipping}</td>
-                            <td class="primary"></td>
+                            <td>${order.id}</td>
+                            <td>${order.desc}</td>
+                            <td class="success">Success</td>
+                            <td class="danger">Pending</td>
                         `;
 
     tr.innerHTML = trContent;
