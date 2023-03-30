@@ -55,7 +55,7 @@ form > input{
 }
 .genderField{
     width: 300px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: auto;
     
 }
@@ -96,7 +96,7 @@ form > input{
    /* text-decoration: none; */
    border-radius: 10px;
    /* text-align: center; */
-   border: 1px solid #000;
+   /* border: 1px solid #000; */
 }
 
 
@@ -108,6 +108,32 @@ form #apply:hover{
 }   
 
 
+/*  login button */
+#Or{
+    /* border: 1px solid #000; */
+padding-top: 20px;
+    margin: auto;
+}
+
+#login{
+    text-align: center;
+}
+
+
+#logHere{
+    
+    background-color: blue;
+    width: 200px;
+    height: 30px;
+   /* margin: auto; */
+   border: none;
+   color: white;
+   /* text-decoration: none; */
+   border-radius: 7px;
+   margin-left: 5px;
+   
+   
+}
 /* checkbox */
 #checkbox{
     /* border: 1px solid red; */
