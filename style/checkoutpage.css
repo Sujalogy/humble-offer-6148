@@ -3,13 +3,93 @@
     padding: 0px;
     box-sizing: border-box;
 }
-#header{
+/* .navOne {
+    display: flex;
+    justify-content: space-between;
+    background-color: #172749;
+    align-items: center;
+    height: 42px;
+}
+
+.navOne > .arrow {
+    height: 46px;
+    width: 20px;
+    border: none;
+    background-color: transparent; 
+} .navOne > .arrow > p {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 7px;
+    font-weight: 100;
+}
+
+.navOne > .sliders {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} .sliders {
+    animation: slide 5s infinite;
+} @keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    } 20% {
+        opacity: 1;
+        transform: translateX(0);
+    } 80% {
+        opacity: 1;
+        transform: translateX(0);
+    } 100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+} */
+/* ? ===========================here is navOne {ends}  */
+
+/* ? ===========================here is navTwo {starts}  */
+.navTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navTwo > .categoryLinks {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} .categoryLinks a {
+    text-decoration: none;
+    color: #172749;
+    padding: 4px 0px 4px 0px;
+} .categoryLinks a:hover {
+    border-bottom: 2px solid #172749;
+    cursor: pointer;
+}
+
+.navTwo > .logo img {
+    width: 128px;
+}
+
+.navTwo > .Loginlinks {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;    
+} .Loginlinks img {
+    width: 20px;
+    height: 20px;
+}
+/* ? ===========================here is navTwo {ends}  */
+/* #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 100px;
     height: 100px;
-}
+} */
 #nav_icons{
     padding-right: 50px;
 }
@@ -22,12 +102,6 @@
 #tab,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
-}
-input::placeholder {
-    font: 18px/3 sans-serif;
-}
-select{
-    font: 18px/3 sans-serif;
 }
 label{
     font-size: 18px;
@@ -43,6 +117,7 @@ label{
 span{
     float: right;
 }
+
 #shipping{
     width:57%;
     font-size: 25px;
@@ -66,6 +141,12 @@ span{
     justify-content: space-between;
    
 }
+input{
+    padding-left: 10px;
+}
+select{
+    padding-left: 10px;
+}
 #order_table,td{
     width:370px;
     border:none;
@@ -87,12 +168,10 @@ span{
 }
 ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
 }
 li{
     margin-bottom: 10px;
+    margin-right: 100px;
 }
 li > a{
     color: black;
