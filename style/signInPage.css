@@ -15,7 +15,7 @@ h3{
     color:rgb(30, 46, 108);
     margin: 0;
     padding: 0;
-    font-size: 30px;
+    font-size: 20px;
 }
 form{
     display: grid;
@@ -106,7 +106,7 @@ form{
 }
 #trackOrder input{
     box-sizing: border-box;
-    height: 40px;
+    height: 30px;
     padding: 10px;
 }
 
@@ -116,6 +116,9 @@ form{
     background-color: #fff;
     font-weight: bold;
     cursor: pointer;
+    box-sizing: border-box;
+    /* height: 60px; */
+    /* border: 1px solid red; */
 }
 #checkStatus:hover{
     background-color:  rgb(23,39,74);
