@@ -87,15 +87,15 @@ nav {
     /* border: 1px solid #000; */
     padding: 40px 0px 37px 0px;
 }
-.categoryLinks a {
+.categoryLinks > .underline > a {
     text-decoration: none;
     color: #172749;
     padding: 4px 0px 4px 0px;
-} .categoryLinks  a:hover {
+} .categoryLinks > .underline > a:hover {
     border-bottom: 2px solid #172749;
     cursor: pointer;
 }
-/* * here is the dropdowns for category link {starts} */
+/* * here is the dropdowns common css for category link {starts} */
 .drop {
     display: none;
     position: absolute;
@@ -106,12 +106,68 @@ nav {
     height: 504.5px;
     z-index: 1;
     background-color: white;
+} .flexing {
+    display: flex;
+} .first {
+    width: 235.5px;
+    height: 504.5px;
+} .second {
+    background-color:#f2f2f2;
+    width: 263px;
+    height: 504.5px;
+}
+/* * here is the dropdowns common css for category link {starts} */
+
+/* *? here is the dropdowns individual css for category link {starts} */
+
+.forwomen > .flexing > .first {
+    display: flex;
+    height: 504.5px;
+    justify-content: space-between;
+    flex-direction: column;
+}  .forwomen > .flexing > .first > .upper > a {
+    position: relative;
+    right: 55px;
+    font-weight: 600;
+    top: 31px;
+    color: #005eb8;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+} .forwomen > .flexing > .first > .lower {
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(1, 235.5px);
+    grid-template-rows: repeat(11, 40.5px);
+    align-items: center;
+} .forwomen > .flexing > .first > .lower > a {
+    position: relative;
+    /* left: 10px; */
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid #000; */
+    padding-top: 12px;
+    padding-bottom: 12px;
+} .forwomen > .flexing > .first > .lower > a:hover {
+    text-decoration: underline;
+    background-color:#f2f2f2;
+} .forwomen > .flexing > .first > .lower > a > p{
+    position: relative;
+    left: 10px;
 }
 
+/* *? here is the dropdowns individual css for category link {starts} */
+
 /* ! ??? need to be removed just for test */
-.other {
+.empty {
     width: 100%;
-    height: 246.5px;
+    height: 142px;
+}
+.other2 {
+    width: 100%;
+    height: 104.5px;
 }
 .vid {
     /* padding-top: 143px; */
@@ -124,6 +180,7 @@ video{
     z-index: 0;
 }
 /* ! ??? need to be removed just for test */
+
 
 /* * here is the dropdowns for category link {ends} */
 
