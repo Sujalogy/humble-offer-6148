@@ -22,26 +22,30 @@
     <div class="navTwo">
         <!-- Category {starts} -->
         <div class="categoryLinks">
-            <div id="Women" class="Women">
+            <div id="Women" class="Women underline">
                 <a href="#">Women</a>
             </div>
-            <!-- dropdown for Women Categories {starts} -->
-            <!-- dropdown for Women Categories {ends} -->
-            <div id="Men" class="Men">
+            <!-- ? dropdown for Women Categories {starts} -->
+                <div class="drop" id="drop1"></div>
+            <!-- ? dropdown for Women Categories {ends} -->
+            <div id="Men" class="Men underline">
                 <a href="#">Men</a>
             </div>
-            <!-- dropdown for Men Categories {starts} -->
-            <!-- dropdown for Men Categories {ends} -->
-            <div id="Jeans" class="Jeans">
-                <a href="#">Jeans</a>
+            <!-- ? dropdown for Men Categories {starts} -->
+            <div class="drop" id="drop2"></div>
+            <!-- ? dropdown for Men Categories {ends} -->
+            <div id="Jeans" class="Jeans underline">
+                <a href="#" class="jeans">Jeans</a>
             </div>
-            <!-- dropdown for Jeans Categories {starts} -->
-            <!-- dropdown for Jeans Categories {ends} -->
-            <div id="Clearance" class="Clearance">
+            <!-- ? dropdown for Jeans Categories {starts} -->
+            <div class="drop" id="drop3"></div>
+            <!-- ? dropdown for Jeans Categories {ends} -->
+            <div id="Clearance" class="Clearance underline">
                 <a href="#">Clearance</a>
             </div>
-            <!-- dropdown for Clearance Categories {starts} -->
-            <!-- dropdown for Clearance Categories {ends} -->
+            <!-- ? dropdown for Clearance Categories {starts} -->
+            <div class="drop" id="drop4"></div>
+            <!-- ? dropdown for Clearance Categories {ends} -->
         </div>
         <!-- Category {ends} -->
 
@@ -56,26 +60,34 @@
         <!-- Logo {ends} -->
             
         <!-- login, wishlist, cart and search {starts}-->
-        <div class="Loginlinks">
+        <div class="Loginlinks" id="Loginlinks">
             <div class="search">
-                <input type="search" placeholder="Search" />
+                <input type="search" placeholder=" &nbsp; &nbsp; Search" />
             </div>
-            <div class="wishlist">
+            <div class="links">
                 <a href="#">
                     <img src="https://cdn-icons-png.flaticon.com/128/2767/2767018.png" alt="heart">
                 </a>
             </div>
-            <div class="locate">
+            <div class="links">
                 <a href="#">
                     <img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="location">
                 </a>
             </div>
-            <div class="login">
+            <div class="links userIcon" id="userIcon">
                 <a href="#">
                     <img src="https://cdn-icons-png.flaticon.com/128/9308/9308008.png" alt="user">
                 </a>
+            <!-- ? here is a dropdown for login/register {starts} -->
+            <div class="dropUser" id="dropUser">
+                <button class="margin register">Register</button>
+                <button class="signin">Sign In </button>
+                <a href="#">Track an Order</a>
+                <a href="#">Get Help</a>
             </div>
-            <div class="cart">
+            <!-- ? here is a dropdown for login/register {ends} -->
+            </div>
+            <div class="links">
                 <a href="#">
                     <img src="https://cdn-icons-png.flaticon.com/128/102/102665.png" alt="bag">
                 </a>
@@ -86,6 +98,17 @@
     <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
     </nav>
 <!-- ! =========== + 2 levels of nav bar + {ends} ===========-->
+    <div class="other">
+        
+    </div>
+   <div class="vid">
+    <video autoplay muted loop id="bg-video">
+        <source src="https://staging-webstore-aeropostale.demandware.net/on/demandware.static/-/Sites-aeropostale-Library/default/vd2d42fc30ec232c0f9a55397220276735d415120/images/2023/Homepage/032323/50%20off-DT-1.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="bg-video2">
+        <source src="https://staging-webstore-aeropostale.demandware.net/on/demandware.static/-/Sites-aeropostale-Library/default/vd2d42fc30ec232c0f9a55397220276735d415120/images/2023/Homepage/032323/50%20off-DT-1.mp4" type="video/mp4">
+    </video>
+   </div>
 </body>
 <script src="/script/index.js"></script>
 </html>
