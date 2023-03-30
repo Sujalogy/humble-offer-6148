@@ -4,9 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 nav {
+    z-index: 2;
+    position: fixed;
     box-sizing: border-box;
     width: 100%;
     border: none;
+    background-color: white;
     border-bottom: 1px solid #e0e0e0;
 }
 /* ? ===========================here is navOne {starts}  */
@@ -58,35 +61,149 @@ nav {
 .navTwo {
     display: flex;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
+    box-sizing: border-box;
 }
 
 .navTwo > .categoryLinks {
-    width: 295px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 74px);
+    justify-content: center;
     align-items: center;
-} .categoryLinks a {
+    text-align: center;
+    /* border: 1px solid #000; */
+} .categoryLinks > .Women {
+    /* border: 1px solid #000; */
+    padding: 40px 0px 37px 0px;
+} .categoryLinks > .Men {
+    /* border: 1px solid #000; */
+    padding: 40px 0px 37px 0px;
+} .categoryLinks > .Jeans {
+    /* border: 1px solid #000; */
+    padding: 40px 0px 37px 0px;
+} .categoryLinks > .Jeans > .jeans {
+    margin-right: 18px;
+} .categoryLinks > .Clearance {
+    /* border: 1px solid #000; */
+    padding: 40px 0px 37px 0px;
+}
+.categoryLinks a {
     text-decoration: none;
     color: #172749;
     padding: 4px 0px 4px 0px;
-} .categoryLinks a:hover {
+} .categoryLinks  a:hover {
     border-bottom: 2px solid #172749;
     cursor: pointer;
 }
+/* * here is the dropdowns for category link {starts} */
+.drop {
+    display: none;
+    position: absolute;
+    top: 141px;
+    right: 0px;
+    border:1px solid #e0e0e0;
+    width: 100%;
+    height: 504.5px;
+    z-index: 1;
+    background-color: white;
+}
+
+/* ! ??? need to be removed just for test */
+.other {
+    width: 100%;
+    height: 246.5px;
+}
+.vid {
+    /* padding-top: 143px; */
+    width: auto;
+}
+video{
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    width: 100%;
+    z-index: 0;
+}
+/* ! ??? need to be removed just for test */
+
+/* * here is the dropdowns for category link {ends} */
 
 .navTwo > .logo img {
     width: 128px;
+    margin-left: 100px;
 }
 
 .navTwo > .Loginlinks {
     display: flex;
-    width: 380px;
+    width: 370px;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 } .Loginlinks img {
     width: 20px;
     height: 20px;
+    margin-top: 5px;
+} .Loginlinks input[type="search"] {
+    width: 166px;
+    height: 40px;
+    border:2px solid #dbdbdbfa;
+    border-radius: 30px;
+    font-weight: 550;
+    background-image: url('https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/2x/external-search-social-media-ui-tanah-basah-basic-outline-tanah-basah.png');
+    background-size: 17px;
+    background-repeat: no-repeat;
+    background-position: 130px;
+    padding-right: 18px; /* adjust to fit the size of icon */
+} .Loginlinks .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 3px;
+} .Loginlinks > .links:hover{
+    background-color: #ecf2f8;
+} 
+
+.Loginlinks > .userIcon > .dropUser {
+    display: none;
+    position: absolute;
+    width: 240px;
+    height: 211px;
+    top: 123px;
+    right: 46px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+} .Loginlinks > .userIcon > .dropUser > .margin {
+    margin-top: 28px;
+} .Loginlinks > .userIcon > .dropUser > button {
+    background-color: white;
+    width: 198px;
+    height: 41px;
+    margin-top: 12px;
+    margin-left: 9%;
+    border-radius: 20px;
+} .Loginlinks > .userIcon > .dropUser >.register {
+    border: 2px solid black;
+    color: black;
+} .Loginlinks > .userIcon > .dropUser >.register:hover{
+    border: none;
+    background-color: black;
+    color: white;
+} .Loginlinks > .userIcon > .dropUser >.signin{
+    border: 2px solid #005eb8;
+    color: #005eb8;
+} .Loginlinks > .userIcon > .dropUser >.signin:hover{
+    border: none;
+    background-color: #005eb8;
+    color: white;
+} .Loginlinks > .userIcon > .dropUser > a {
+    display: block;
+    margin-top: 15px;
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+} .Loginlinks > .userIcon > .dropUser > a:hover {
+    text-decoration: underline;
 }
 /* ? ===========================here is navTwo {ends}  */
