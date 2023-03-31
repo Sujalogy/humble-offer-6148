@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./products.css">
-    <title>Admin | Products</title>
+    <link rel="stylesheet" href="./orders.css">
+    <title>Admin | Orders</title>
 </head>
 <body>
-
     <div class="container">
 
         <!-- ------------------------------- SIDE MENU --------------------------------- -->
@@ -60,14 +59,42 @@
 
         <!-- -----------------------------------MAIN SECTION ----------------------------------- -->
         <main>
-            <h1>Products</h1>
-            <div id="product-container">
-                
+            <h1>Orders</h1>
+            <div class="recent-orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Id</th>
+                            <th>Product Description</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>34638</td>
+                            <td>Foldable Mini Drone</td>
+                            <td class="success">Success</td>
+                            <td class="danger">Pending</td>
+                        </tr>
+                        <tr>
+                            <td>34638</td>
+                            <td>Foldable Mini Drone</td>
+                            <td class="success">Success</td>
+                            <td class="danger">Pending</td>
+                        </tr>
+                        <tr>
+                            <td>34638</td>
+                            <td>Foldable Mini Drone</td>
+                            <td class="success">Success</td>
+                            <td class="danger">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </main>
         
     </div>
-
 </body>
-<script src="./products.js"></script>
+<script src="./orders.js"></script>
 </html>
