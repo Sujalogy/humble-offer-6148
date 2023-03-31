@@ -1,7 +1,7 @@
-let addProductForm = document.getElementById("form");
+let editProductForm = document.getElementById("form");
 // let productsArray = JSON.parse(localStorage.getItem("products")) || [];
 
-addProductForm.addEventListener("submit", function(e){
+editProductForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     let productId = document.getElementById("product-id").value;
@@ -15,16 +15,15 @@ addProductForm.addEventListener("submit", function(e){
     let productColor = document.getElementById("color").value;
 
     
-    addProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize, productColor);
+    editProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize, productColor);
     // productsArray.push(productObj);
     
     // localStorage.setItem("products", JSON.stringify(productsArray));
 });
 
-function addProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize,productColor){
+function editProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize,productColor){
 
     let productObj = {
-        "id" : productId,
         "img1" : productImg1,
         "img2" : productImg2,
         "category" : productCategory,
@@ -35,8 +34,8 @@ function addProduct(productId, productImg1, productImg2, productCategory, produc
         "color" : productColor,
     };
 
-    fetch(`http://127.0.0.1:3000/api/women`, {
-        method : 'POST',
+    fetch(`http://127.0.0.1:3000/api/women/${productId}`, {
+        method : 'PUT',
         headers : {
             'Content-type' : 'application/json'
         },
