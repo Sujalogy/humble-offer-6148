@@ -87,15 +87,15 @@ nav {
     /* border: 1px solid #000; */
     padding: 40px 0px 37px 0px;
 }
-.categoryLinks a {
+.categoryLinks > .underline > a {
     text-decoration: none;
     color: #172749;
     padding: 4px 0px 4px 0px;
-} .categoryLinks  a:hover {
+} .categoryLinks > .underline > a:hover {
     border-bottom: 2px solid #172749;
     cursor: pointer;
 }
-/* * here is the dropdowns for category link {starts} */
+/* * here is the dropdowns common css for category link {starts} */
 .drop {
     display: none;
     position: absolute;
@@ -106,12 +106,157 @@ nav {
     height: 504.5px;
     z-index: 1;
     background-color: white;
+} .flexing {
+    display: flex;
+} .first {
+    width: 235.5px;
+    height: 504.5px;
+} .second {
+    background-color:#f2f2f2;
+    width: 263px;
+    height: 504.5px;
+}
+/* * here is the dropdowns common css for category link {starts} */
+
+/* *? here is the dropdowns individual css for category link {starts} */
+
+.forwomen > .flexing > .first {
+    display: flex;
+    height: 504.5px;
+    justify-content: space-between;
+    flex-direction: column;
+}  .forwomen > .flexing > .first > .upper > a {
+    position: relative;
+    right: 55px;
+    font-weight: 600;
+    top: 31px;
+    color: #005eb8;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+} .forwomen > .flexing > .first > .upper > a:hover{
+    text-decoration: underline;
+} .forwomen > .flexing > .first > .lower {
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(1, 235.5px);
+    grid-template-rows: repeat(11, 40.5px);
+    align-items: center;
+} .forwomen > .flexing > .first > .lower > a {
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+} .forwomen > .flexing > .first > .lower > .arrow:hover {
+    text-decoration: underline;
+    background-color:#f2f2f2;
+} .forwomen > .flexing > .first > .lower > a:hover {
+    text-decoration: underline;
+    /* background-color:#f2f2f2; */
+} .forwomen > .flexing > .first > .lower > a > p {
+    position: relative;
+    left: 10px;
 }
 
+.forwomen > .flexing > .second > .saming {
+    display: flex;
+    flex-direction: column;
+} .forwomen > .flexing > .second > .saming > .topupper > a{
+    position: relative;
+    right: 55px;
+    font-weight: 600;
+    top: 31px;
+    color: #005eb8;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+} .forwomen > .flexing > .second > .saming > .topupper > a:hover {
+    text-decoration: underline;
+} .forwomen > .flexing > .second > .saming > .toplower {
+    position: relative;
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(1, 235.5px);
+    grid-template-rows: repeat(11, 40.5px);
+    align-items: center;
+} .forwomen > .flexing > .second > .saming > .toplower > a {
+    position: relative;
+    font-size: 14px;
+    top: 40px;
+    left: 11.5px;
+    text-decoration: none;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+} .forwomen > .flexing > .second > .saming > .toplower > a:hover {
+    text-decoration: underline;
+    background-color:#f2f2f2;
+} .forwomen > .flexing > .second > .saming > .toplower > a > p{
+    position: relative;
+    left: 10px;
+}
+
+.forwomen > .flexing > .third .saming {
+    display: flex;
+    flex-direction: column;
+} .forwomen > .flexing > .third .saming > .topupper > a{
+    position: relative;
+    right: 55px;
+    font-weight: 600;
+    top: 31px;
+    color: #005eb8;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+} .forwomen > .flexing > .third .saming > .topupper > a:hover {
+    text-decoration: underline;
+} .forwomen > .flexing > .third .saming > .toplower {
+    position: relative;
+    display: grid;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(1, 235.5px);
+    grid-template-rows: repeat(11, 40.5px);
+    align-items: center;
+    /* border: 1px solid #000; */
+} .forwomen > .flexing > .third .saming > .toplower > a {
+    position: relative;
+    font-size: 14px;
+    top: 40px;
+    left: 11.5px;
+    text-decoration: none;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 12px;
+} .forwomen > .flexing > .third .saming > .toplower > a:hover {
+    text-decoration: underline;
+    background-color:#f2f2f2;
+} .forwomen > .flexing > .third .saming > .toplower > a > p{
+    position: relative;
+    left: 10px;
+} .forwomen > .flexing > .imag > img {
+    width: 400px;
+    height: 270px;
+    position: relative;
+    top: 22px;
+    left: 120px;
+}
+
+
+/* *? here is the dropdowns individual css for category link {starts} */ 
+
 /* ! ??? need to be removed just for test */
-.other {
+.empty {
     width: 100%;
-    height: 246.5px;
+    height: 142px;
+}
+.other2 {
+    width: 100%;
+    height: 104.5px;
 }
 .vid {
     /* padding-top: 143px; */
@@ -124,6 +269,7 @@ video{
     z-index: 0;
 }
 /* ! ??? need to be removed just for test */
+
 
 /* * here is the dropdowns for category link {ends} */
 
@@ -169,7 +315,7 @@ video{
     position: absolute;
     width: 240px;
     height: 211px;
-    top: 123px;
+    top: 110px;
     right: 46px;
     border-radius: 15px;
     background-color: white;
@@ -183,21 +329,35 @@ video{
     margin-top: 12px;
     margin-left: 9%;
     border-radius: 20px;
+} 
+.Loginlinks > .userIcon > .dropUser > .register > a{
+    text-decoration: none;
+    /* border: none; */
+    color:black;
 } .Loginlinks > .userIcon > .dropUser >.register {
     border: 2px solid black;
     color: black;
-} .Loginlinks > .userIcon > .dropUser >.register:hover{
+} .Loginlinks > .userIcon > .dropUser > .register:hover{
     border: none;
     background-color: black;
     color: white;
-} .Loginlinks > .userIcon > .dropUser >.signin{
+} .Loginlinks > .userIcon > .dropUser > .register:hover a{
+    color: white;
+} 
+.Loginlinks > .userIcon > .dropUser >.signin{
     border: 2px solid #005eb8;
     color: #005eb8;
+}.Loginlinks > .userIcon > .dropUser >.signin a{
+    text-decoration: none;
 } .Loginlinks > .userIcon > .dropUser >.signin:hover{
     border: none;
     background-color: #005eb8;
     color: white;
-} .Loginlinks > .userIcon > .dropUser > a {
+}  .Loginlinks > .userIcon > .dropUser > .signin:hover a{
+    text-decoration: none;
+    color: white;
+} 
+.Loginlinks > .userIcon > .dropUser > a {
     display: block;
     margin-top: 15px;
     margin-left: 10%;

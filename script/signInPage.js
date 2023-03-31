@@ -18,7 +18,7 @@ form.addEventListener("submit",(e)=>{
     if(flag)
     {
         alert("Login Successfully")
-        // window.location.href="./index.html"
+        window.location.href="./index.html"
     }
     else{
         alert("Enter correct Email Id Password")
