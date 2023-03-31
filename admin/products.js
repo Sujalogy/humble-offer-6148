@@ -1,7 +1,24 @@
-let productsContainer = document.getElementById("products-container");
-let productsArray = JSON.parse(localStorage.getItem("products")) || [];
+let productsContainer = document.getElementById("product-container");
+// let productsArray = JSON.parse(localStorage.getItem("products")) || [];
 
-displayProducts(productsArray);
+window.addEventListener("load", function(e){
+    e.preventDefault();
+
+    fetchProducts();
+});
+
+function fetchProducts(){
+    fetch(`http://127.0.0.1:3000/api/women`)
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        console.log(data);
+        displayProducts(data);
+    })
+}
+
+// displayProducts(productsArray);
 
 function displayProducts(data){
     productsContainer.innerHTML = "";
@@ -12,15 +29,19 @@ function displayProducts(data){
 
         let productImg = document.createElement("img");
         productImg.setAttribute("class", "product-img");
+        productImg.src = product.img1;
 
-        let productDesc = document.createElement("h4");
+        let productDesc = document.createElement("h3");
         productDesc.setAttribute("class", "product-desc");
+        productDesc.innerText = product.desc;
 
         let productCategory = document.createElement("h5");
         productCategory.setAttribute("class", "product-category");
-
+        productCategory.innerText = product.category;
+        
         let productPrice = document.createElement("p");
         productPrice.setAttribute("class", "product-price");
+        productPrice.innerText = `$${product.price}`;
 
         let removeButton = document.createElement("button");
         removeButton.innerText = "Remove";
@@ -32,10 +53,7 @@ function displayProducts(data){
             displayProducts(productsArray);
         })
 
-        productImg.src = product.img1;
-        productDesc.innerText = product.desc;
-        productPrice.innerText = `$${product.price}`;
-        
+        productCard.append(productImg, productDesc, productCategory, productPrice, removeButton);
         productsContainer.append(productCard);
     });
 }
