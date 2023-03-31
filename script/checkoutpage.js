@@ -44,10 +44,18 @@ businessEl.addEventListener('click', handleShippingMethod);
 overnightEl.addEventListener('click', handleShippingMethod);
 
 
+totalPrice()
+ 
+function totalPrice() {
+  let total = 0;
+  let storageData = JSON.parse(localStorage.getItem("cartData"));
 
-// continue to billing js here 
-let contBill = document.getElementById(("btn"))
-contBill.addEventListener("click",()=>{
+  for (let i = 0; i < storageData.length; i++) {
+    total += Number(storageData[i].price);
+  }
+  let subtotalCp= document.getElementById("subtotal");
+  subtotalCp.innerText = `$ ${total}`
+ 
+}
+ 
 
-    
-})

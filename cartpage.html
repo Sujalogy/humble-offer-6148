@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/register.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/cartpage.css">
 </head>
 <body>
-
-
-    <nav>
+     <!-- navbar -->
+     <nav>
         <!-- -=-=-=-=--=--= sliding nav bar {starts} =-=-=-=--==-=-=-=- -->
         <div class="navOne">
             <button id="left" class="arrow" onclick="prevSlide()"> <p> &#8249; </p> </button>
@@ -295,7 +294,7 @@
             <div class="logo">
                 <div class="img">
                     <a href="index.html">
-                        <img src="./images/logo2.png" alt="logo+link">
+                        <img src="/images/logo2.png" alt="logo+link">
                     </a>
                 </div>
             </div>
@@ -327,7 +326,7 @@
                         <a href="#">Track an Order</a>
                         <a href="#">Get Help</a>
                     </div>
-                    <!-- ? here is a dropdown for login/register {ends} -->
+                <!-- ? here is a dropdown for login/register {ends} -->
                 </div>
                 <div class="links">
                     <a href="#">
@@ -337,184 +336,15 @@
             </div>
             <!-- login, wishlist, cart and search {ends}-->
         </div>
-        <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->   
-    </nav>
-    
-    
-    <div id="cont"></div>
-    
-    <div id="bodyContainer">
-        <!-- this for account Dropdown Menu  -->
-        <div id="accountMenu">
-            
-            <div class="dropdown">
-                <hr>
-                <div class="select">
-                    <span class="selected" id="account">ACCOUNT SETTING</span>
-                    <div class="caret"></div>
-                </div>
-                    <ul class="menu">
-                        <li><a href="./register.html">Create Account</a></li>
-                    </ul>
-             </div>  
-             <div class="dropdown">
-                <hr>
-                <div class="select">
-                    <span class="selected">SHOP CONFIDENTLY</span>
-                    <div class="caret"></div>
-                </div>
-                    <ul class="menu">
-                        <li><a href="./privacyPolicyPage.html">Privacy Policy</a></li>
-                        <li><a href="#">Secure Shopping</a></li>
-
-                    </ul>
-             </div>      
-        </div>
-
-        <!-- Here is starting form page  -->
-        <div id="registerForm">
-
-            <form>
-                <h2>Create An Account</h2>
-                <input type="text" placeholder="First Name*" id="name">
-                <br>
-                <input type="text" placeholder="Last Name*" id="lastName">
-                <br>
-                <input type="text" placeholder="Phone*" id="phone" maxlength="10">
-                <br>
-                <fieldset id="genderFeild" class="genderField"><legend>
-                    <label for="gender">Gender</label>
-                </legend>
-                
-                    <select id="gender">
-                        <option value="">Select</option>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                
-                </fieldset>
-                <br>
-                <div id="fieldSelect">
-                <fieldset id="monthField"><legend>Birth Month</legend>
-                    <select  id="birthMonth">
-                        <option value=''>Select Month</option>
-                        <option  value='1'>Janaury</option>
-                        <option value='2'>February</option>
-                        <option value='3'>March</option>
-                        <option value='4'>April</option>
-                        <option value='5'>May</option>
-                        <option value='6'>June</option>
-                        <option value='7'>July</option>
-                        <option value='8'>August</option>
-                        <option value='9'>September</option>
-                        <option value='10'>October</option>
-                        <option value='11'>November</option>
-                        <option value='12'>December</option>
-                    </select>
-                </fieldset>
-
-                
-                <fieldset id="dateField"> 
-                    <legend> <label for="birthDate">Birth Date</label> </legend>
-                        <select  id="birthDate">
-                            <option value="">Select Birth Date</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="29">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                        </select>
-              
-                </fieldset>
-             
-                </div>
-                <br>
-
-                <input type="email" placeholder="Email*" id="email">
-                <br>
-                <input type="email" placeholder="Confirm Email*" id="ConfirmEmail">
-                <br>
-                <input type="password" placeholder="Password*" id="password">
-                <br>
-                <input type="password" placeholder="Confirm Password*" id="confirmPassword">
-                <br>
-                <div id="declartion">
-
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox" id="check"><span id="text">Please add me to Aeropostale's email list. Aeropostale  does not share or sell personal info.</span></label>
-                </div>
-                <br>
-                <input type="submit" value="Apply" id="apply">
-                
-            </form>
-            
-            <div id="login">
-               <h3 id="Or">Or</h3>
-               <p>User Already register Login here</p>
-           <button id="logHere">login here...</button>
-            </div>
-       
-            
-            
-
-            
-            
-        </div>
-                
-                
-        <div id="needHelp">
-            <div id="help">
-            <h4>Need Help</h4>
-            <br>
-            <p>Live Chat</p>
-            <p>9 AM to 11 PM EST</p>
-            <P>7 Days a Week</P>
-            <a href="">Call Us</a>
-            <br>
-            <br>
-            <br>
-            <p>Call Today Toll Free</p>
-            <p>Available 8 AM to 2 Am est</p>
-            <a href="">1-877-289-2376</a>
-            </div>
-            <br>
-            <a href="./privacyPolicyPage.html">Privacy Policy</a>
-            <br>
-            <a href="">Secure Shopping</a>
-            
-        </div>
-
-    </div>  <!--body container div -->
-
+        <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
+        </nav>
+    <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
+    <!-- </nav> -->
+    <hr>
+    <div style="margin-top: 150px;">
+        <h2 id="total"><span style="padding-left: 30px;">
+            Shopping Bag :-  </span><span id="cart-total">0</span></h1>
+    </div>
 </body>
-<script src="./script/index.js"></script>
-<script src="./script/register.js"></script>
+<script src="/script/index.js"></script>
 </html>
-
-
