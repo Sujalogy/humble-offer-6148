@@ -5,8 +5,7 @@ let unorder = document.getElementById("unorder")
 
 let division = document.getElementById("division")
 let ul = document.getElementById("unorder_list")
-// for(let i=0;i<lsData.length;i++)
-// {
+
   let li1=document.createElement("li")
   let li2=document.createElement("li")
   let li3=document.createElement("li")
@@ -26,10 +25,8 @@ let ul = document.getElementById("unorder_list")
   let fullName = lsData.fname + " " +lsData.lname
   let userAddress = lsData.city +","+lsData.select+","+lsData.zip
   ul.append(fullName,li3,userAddress,li7)
-  
-// }
-//   for(let j=0;j<lsData.length;j++)
-// {
+
+  let unorder_label = document.getElementById("unorder_label")
   let line1=document.createElement("li")
   let line2=document.createElement("li")
   let line3=document.createElement("li")
@@ -48,9 +45,8 @@ let ul = document.getElementById("unorder_list")
   
   let fullNam = lsData.fname + " " +lsData.lname
   let userAddres = lsData.city +","+lsData.select+","+lsData.zip
-  unorder.append(fullNam,line3,userAddres,line7)
-  // console.log(fullName,line3,userAddress,line7)
-// }
+  unorder_label.append(fullNam,line3,userAddres,line7)
+  
 
 localStorage.setItem("checkout",JSON.stringify(lsData))
 
@@ -80,24 +76,9 @@ function showDropdown2() {
   otherDropdown.style.display = "none";
 }
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const selectedShippingMethod = urlParams.get('shipping_method');
-
-// // Update the selected shipping method in the billing page
-// const selectedShippingMethodEl = document.getElementById('selected_shipping_method');
-// selectedShippingMethodEl.textContent = selectedShippingMethod;
-
-// let economyGround = document.getElementById("economy")
-// let payment_id = document.getElementById("payment_id")
-// economyGround.addEventListener("click",economy)
-
-
-// import person from "./script/checkoutpage.js"
 
 let payment = document.getElementById("payment_id")
 
-
-// let t = person()
 economy()
 
 function economy()
@@ -113,4 +94,33 @@ function economy()
   payment.append(li1,li2,li3)
 }
 
-//  payment.append()
+let storageData = JSON.stringify(localStorage.getItem("productdesc"))
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+let imgDiv1 = document.getElementById("img1_div")
+
+let image1  = document.createElement("img")
+image1.className+="image1"
+
+
+image1.setAttribute("src",`${storageData.img1}`)
+
+
+imgDiv1.append(image1)
+
+
+let descriptionDiv = document.getElementById("description")
+
+let title = document.createElement("h4")
+let price = document.createElement("h4")
+price.className += "priceVal"
+
+let color = document.createElement("p")
+let size = document.createElement("p")
+
+title.innerText = `${storageData.desc}`;
+color.innerText = "Color: " + `${storageData.color}`;
+size.innerText ="Size: " + `${storageData.size}`
+price.innerText = `${storageData.price}`
+
+
+descriptionDiv.append(title,color,size,)

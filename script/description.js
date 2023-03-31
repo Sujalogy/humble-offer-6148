@@ -1,5 +1,5 @@
 let storageData = JSON.stringify(localStorage.getItem("productdesc"))
-
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 let imgDiv1 = document.getElementById("img1_div")
 let imgDiv2 = document.getElementById("img2_div")
 
@@ -40,8 +40,11 @@ comp_value.innerText = "Comp.value: $"+ `${storageData.comp-price}`;
 btn.innerText = "Add to bag"
 btn.addEventListener("click",buttonClick)
 function buttonClick(){
+    cartData.push(storageData)
     location.href="./checkoutpage.html"
+   
 }
+
 
 division.append(price,comp_value)
 
