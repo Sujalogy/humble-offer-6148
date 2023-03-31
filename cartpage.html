@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/checkoutpage.css">
+    <link rel="stylesheet" href="./style/cartpage.css">
 </head>
 <body>
-    <!-- navbar -->
-    <nav>
+     <!-- navbar -->
+     <nav>
         <!-- -=-=-=-=--=--= sliding nav bar {starts} =-=-=-=--==-=-=-=- -->
         <div class="navOne">
             <button id="left" class="arrow" onclick="prevSlide()"> <p> &#8249; </p> </button>
@@ -342,177 +341,10 @@
     <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
     <!-- </nav> -->
     <hr>
-    <!-- Shipping form -->
-    <!-- <div id="header"> -->
-    <div id="main">
-        <div>
-            <h2 style="margin-top: 50px;">1.SHIPPING</h2>
-        </div>
-        <div id="shipping">
-           
-            <h5>SHIPPING ADDRESS</h5>
-            <form id="form">
-            <input id="f_name" style="width:40%;height: 50px;margin-right:15px;" type="text" placeholder="First Name" required>
-            <input id="l_name" type="text"style="width:42%;height: 50px;" placeholder="Last Name" required>
-            <br>
-            <br>
-            <input id="address" type="text"style="width:85%;height: 50px;" placeholder="Address" required>
-            <br>
-            <br>
-            <input id="apt" type="text"style="width:85%;height: 50px;" placeholder="Apt,Suite,Etc.(optional)">
-            <br>
-            <br>
-            <h5>COUNTRY</h5>
-            <select id="states" style="width:40%;height:50px;margin-right:15px;" placeholder="United States" required>
-                <option value="United States">United States</option>
-            </select>
-            <!-- <input id="states" type="text" style="width:40%;height:50px;margin-right:15px;" placeholder="United States" required> -->
-            <input id="zip" type="number" style="width:42%;height:50px;" placeholder="Zip Code" required>
-            <br>
-            <br>
-            <input id="city" type="text" style="width:40%;height:50px;margin-right:15px;" placeholder="City" required>
-            <select id="select" style="width:42%;height:50px;">
-                <option value="">Select</option>
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <option value="American Samoa">American Samoa</option>
-                <option value="Arizona">Arizona</option>
-                <option value="Arkansas">Arkansas</option>
-                <option value="California">California</option>
-                <option value="Colorado">Colorado</option>
-                <option value="Connecticut">Connecticut</option>
-                <option value="Delware">Delware</option>
-                <option value="District of Columbia">District of Columbia</option>
-                <option value="Florida">Florida</option>
-                <option value="Georgia">Georgia</option>
-                <option value="Guam">Guam</option>
-                <option value="Hawali">Hawali</option>
-                <option value="Idaho">Idaho</option>
-                <option value="Illinois">Illinois</option>
-                <option value="Indiana">Indiana</option>
-                <option value="Iowa">Iowa</option>
-                <option value="Kansas">Kansas</option>
-                <option value="Kentucky">Kentucky</option>
-            </select>
-            <br>
-            <br>
-            <input type="number" placeholder="Phone" style="width:40%;height: 50px;margin-right: 17px;">
-            <input type="checkbox">
-            <label>Add to Address Book</label>
-            <br>
-            <br>
-            <label>IS THIS A GIFT</label>
-            <input type="radio">
-            <label for="">Yes</label>
-            <input type="radio">
-            <label for="">No</label>
-            <br>
-            <br>
-            <input type="checkbox">
-            <label>Use this address for Billing</label>
-            <br>
-            <br>
-            <div>
-                <p  style="font-size: 20px;"><b>SHIPPING METHOD </b><span style="color: red;font-size: 15px;">Required*</span></p>
-                <table id="tab">  
-                    <tr>
-                        <td><input type="radio" id="economy" name="shipping-method">
-                            <label for="economy">Economy Ground: <span>$5.00</span></label>
-                        </tr>
-                    <tr>
-                        <td><input type="radio" id="standard" name="shipping-method">
-                        <label for="">Standard Ground: <span>$8.00</span></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" id="business" name="shipping-method">
-                        <label for="">2 Business Days: <span>$13.00</span></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="radio" id="overnight" name="shipping-method">
-                        <label for="">Overnight: <span>$25.00</span></label></td>
-                    </tr>
-                </table>
-            </div>
-            <a href="billingpage.html"><button id="btn">CONTINUE TO BILLING</button></a>
-        </div>
-        <div id="order_summary" style="margin-top: 200px;">
-            <div>
-                <h2 style="margin-left: 10px;">ORDER SUMMARY <span style="margin-right: 10px;font-size: 17px;margin-top: 5px;"><a href="">Edit</a></span> </h2>
-                <table id="order_table">
-                    <tr>
-                        <td><label for=""><b>Subtotal</b><span id="subtotal"></span></label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Shipping Economy Ground <span></span></label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Sales tax <span></span></label></td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: 19px;"><label for=""><b>Estimated total</b><span></span></label></td>
-                    </tr>
-                </table>
-            </div>
-        </form>
-            <div id="help">
-                <p style="text-align: center ;"><b>Help?</b></p>
-                <br>
-                <p style="margin-left: 55px;width:280px;text-decoration: underline;"><b>1-877-289-2376</b></p>
-                <br>
-                <p style="margin-left: 50px;width:300px;text-align: center;font-size: 17px"><b>Phone hours 8AM EST - 12:00AM EST <br>
-                Chat 9AM EST - 12:00AM EST</b></p>
-                <br>
-                <p style="margin-left: 50px;width:300px;text-align: center;font-size: 15px"><b>Paying with PayPal? In-Store Returns will<br> be refunded as Merchandise Credit.</b></p>
-                         
-            </div>
-        </div>
-    </div>
-    <!-- footer part -->
-    <div class="row">
-        <div class="footer-col">
-            <ul>
-                <h4></h4>
-                <li><a href="#">Store Locator</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Gift Cards/Balance</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Shopping Help</h4><br>
-            <ul>
-                <li><a href="#">Help Desk</a></li>
-                <li><a href="#">Returns & Exchanges</a></li>
-                <li><a href="#">Prices & Price Match Policy</a></li>
-                <li><a href="#">Shipping & Handling</a></li>
-                <li><a href="#">Size Charts</a></li>
-                <li><a href="#">Buy Onine, Pick Up In Store</a></li>
-                <li><a href="#">Student Discount</a></li>
-            </ul>
-         </div>
-         <div class="footer-col">
-            <h4>About Us</h4><br>
-            <ul> 
-                <li><a href="#">About FashionFlare</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Supply Chain</a></li>
-                <li><a href="#">Aero Impact</a></li>
-                <li><a href="#">Your Privacy Choices</a></li>
-            <ul>
-        </div>
-    </div>
-    <div class="footer-part">
-        <p><a href="">Don’t Sell My Information</a></p>
-        <p><a href="">Terms of Use</a></p>
-        <p><a href="">Accessibility Statement</a></p>
-        <p><a href="">Privacy Policy</a></p>
-        <p><a href="">CA Transparency Act</a></p>
-        <p><a href="">© 2023 Aeropostale. All Rights Reserved.</a></p>
+    <div style="margin-top: 150px;">
+        <h2 id="total"><span style="padding-left: 30px;">
+            Shopping Bag :-  </span><span id="cart-total">0</span></h1>
     </div>
 </body>
+<script src="/script/index.js"></script>
 </html>
-<script src=".//script/checkoutpage.js"></script>
-
-<script>
-   
-</script>
