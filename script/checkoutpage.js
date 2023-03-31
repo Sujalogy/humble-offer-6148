@@ -46,8 +46,23 @@ overnightEl.addEventListener('click', handleShippingMethod);
 
 
 // continue to billing js here 
-let contBill = document.getElementById(("btn"))
-contBill.addEventListener("click",()=>{
+// let contBill = document.getElementById(("btn"))
+// contBill.addEventListener("click",()=>{
 
-    
-})
+//     person()
+
+// })
+
+
+
+
+// function person(){
+
+//     return {
+//         economy:"Economy Ground",
+//         deliver:"Delivered In 3 - 7 Business Days.",
+//         price:"$5.00"
+        
+//     }
+}
+// export default person

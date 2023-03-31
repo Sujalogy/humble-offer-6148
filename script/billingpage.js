@@ -80,16 +80,26 @@ function showDropdown2() {
   otherDropdown.style.display = "none";
 }
 
-const urlParams = new URLSearchParams(window.location.search);
-const selectedShippingMethod = urlParams.get('shipping_method');
+// const urlParams = new URLSearchParams(window.location.search);
+// const selectedShippingMethod = urlParams.get('shipping_method');
 
-// Update the selected shipping method in the billing page
-const selectedShippingMethodEl = document.getElementById('selected_shipping_method');
-selectedShippingMethodEl.textContent = selectedShippingMethod;
+// // Update the selected shipping method in the billing page
+// const selectedShippingMethodEl = document.getElementById('selected_shipping_method');
+// selectedShippingMethodEl.textContent = selectedShippingMethod;
 
-let economyGround = document.getElementById("economy")
-let payment_id = document.getElementById("payment_id")
-economyGround.addEventListener("click",economy)
+// let economyGround = document.getElementById("economy")
+// let payment_id = document.getElementById("payment_id")
+// economyGround.addEventListener("click",economy)
+
+
+// import person from "./script/checkoutpage.js"
+
+let payment = document.getElementById("payment_id")
+
+
+// let t = person()
+economy()
+
 function economy()
 {
   let li1 = document.createElement("li")
@@ -100,5 +110,7 @@ function economy()
   li2.innerText = "Delivered In 3 - 7 Business Days."
   li3.innerText = "$5.00"
 
-  payment_id.append(li1,li2,li3)
+  payment.append(li1,li2,li3)
 }
+
+//  payment.append()
