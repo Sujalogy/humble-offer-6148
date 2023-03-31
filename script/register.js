@@ -1,6 +1,7 @@
 
 
-let lsdata=JSON.parse(localStorage.getItem("register"))||[]
+let data=JSON.parse(localStorage.getItem("register"))||[]
+// let data=[]
 
 let form =document.querySelector("form")
 form.addEventListener("submit",(e)=>{
@@ -8,90 +9,68 @@ form.addEventListener("submit",(e)=>{
     //  I am checking here if user already register so retrun error
     let email= document.getElementById("email").value
     let flag=true
-    console.log(lsdata);
-    // lsdata.forEach((item)=>{
-    //     if(item.email===email)
-    //     {
-    //         flag=false
-    //     }
-    // })
-    
-
-
-    if(flag) submitData(); 
-    else{
-        alert("User Already Registerd")
-        return 
-    }
-//  if  email is already registered i am return func
-console.log("sgar");
-})
-
-function submitData()
-{
-    let name= document.getElementById("name").value
-    let lastName = document.getElementById("lastName").value
-    let phone= document.getElementById("phone").value
-    let gender= document.getElementById("gender").value
-    let birthMonth= document.getElementById("birthMonth").value
-    let birthDate= document.getElementById("birthDate").value
-    let email= document.getElementById("email").value
-    let ConfirmEmail= document.getElementById("ConfirmEmail").value
-    let password= document.getElementById("password").value
-    let confirmPassword= document.getElementById("confirmPassword").value
-    let checkbox= document.getElementById("checkbox").value
-
-
-
-
-    let obj={
-        name:name+" "+lastName,
-        phone:phone,
-        gender:gender,
-        birthDate:birthDate+" "+birthMonth,
-        email:email,
-        password:password
-    }
-    console.log(obj);
-    if(email!==ConfirmEmail)
+    console.log(data);
+    for(let i=0;i<data.length;i++)
     {
-        alert("Email is not matching")
-        return
-    }
-    if(password!==confirmPassword)
-    {
-        alert("Password Mismatch")
-        return
-    }
-    // if(name!=""&lastName!=""&phone!=""&gender!=""&birthMonth!=""&birthDate!=""&email!=""&ConfirmEmail!=""&password!=""&confirmPassword!=""&checkbox=="checked")
-    if(name&&lastName&&phone&&gender&&birthMonth&&birthDate&&email&&ConfirmEmail&&password&&confirmPassword&&checkbox)
-    {
-        let obj={
-            name:name+" "+lastName,
-            phone:phone,
-            gender:gender,
-            birthDate:birthDate+" "+birthMonth,
-            email:email,
-            password:password
+        if(data[i].email==email)
+        {
+            flag=false
         }
-        localStorage.setItem("register",JSON.stringify(obj))
-        alert("Registeration Successfully")
     }
-    else
+    if(flag)
     {
-        alert("Complete every feild")
+        
+            let name= document.getElementById("name").value
+            let lastName = document.getElementById("lastName").value
+            let phone= document.getElementById("phone").value
+            let gender= document.getElementById("gender").value
+            let birthMonth= document.getElementById("birthMonth").value
+            let birthDate= document.getElementById("birthDate").value
+            // let email= document.getElementById("email").value
+            let ConfirmEmail= document.getElementById("ConfirmEmail").value
+            let password= document.getElementById("password").value
+            let confirmPassword= document.getElementById("confirmPassword").value
+            if(email!==ConfirmEmail)
+            {
+                alert("Email is not matching")
+                return
+            }
+            if(password!==confirmPassword)
+            {
+                alert("Password Mismatch")
+                return
+            }
+            if(name&&lastName&&phone&&gender&&birthMonth&&birthDate&&email&&ConfirmEmail&&password&&confirmPassword&&checkbox)
+            {
+                let obj={
+                    name:name+" "+lastName,
+                    phone:phone,
+                    gender:gender,
+                    birthDate:birthDate+" "+birthMonth,
+                    email:email,
+                    password:password
+                }
+                data.push(obj)
+                localStorage.setItem("register",JSON.stringify(data))
+                alert("Registeration Successfully")
+            }
+            else
+            {
+                alert("Complete every feild")
+            }
+
     }
+        else{
+            alert("User Already Registerd")
+            return }
+    })
+        
+//  direct to login page
+let loginbtn= document.getElementById("logHere")
 
-   
-
-
-
-
-   
-
- 
-}
-
+loginbtn.addEventListener("click",()=>{
+    window.location.href="./signInPage.html"
+})
 
 
 
@@ -142,19 +121,7 @@ dropdowns.forEach(dropdown=>{
              option.classList.add("active")
         })
     })
-    // let accountClick=document.getElementById("account")
-    // accountClick.addEventListener("click",()=>{
-    //     let dropdown=document.querySelectorAll(".dropdown")[0]
-    //     dropdown.style.marginBottom="100px"
-        
-        
-    // })
-    //    accountClick.addEventListener("click",()=>{
-    //     let dropdown=document.querySelectorAll(".dropdown")[0]
-    //     dropdown.style.marginBottom="0px"
-        
-        
-    // })
+ 
     
 
 
@@ -212,3 +179,65 @@ dropdowns.forEach(dropdown=>{
         //     console.log(data);
         // })
     
+    
+    // function submitData()
+    // {
+    //     let name= document.getElementById("name").value
+    //     let lastName = document.getElementById("lastName").value
+    //     let phone= document.getElementById("phone").value
+    //     let gender= document.getElementById("gender").value
+    //     let birthMonth= document.getElementById("birthMonth").value
+    //     let birthDate= document.getElementById("birthDate").value
+    //     let email= document.getElementById("email").value
+    //     let ConfirmEmail= document.getElementById("ConfirmEmail").value
+    //     let password= document.getElementById("password").value
+    //     let checkbox= document.getElementById("checkbox").value
+    
+    
+    
+    
+    //     // let obj={
+    //     //     name:name+" "+lastName,
+    //     //     phone:phone,
+    //     //     gender:gender,
+    //     //     birthDate:birthDate+" "+birthMonth,
+    //     //     email:email,
+    //     //     password:password
+    //     // }
+    //     // console.log(obj);
+    //     // if(name!=""&lastName!=""&phone!=""&gender!=""&birthMonth!=""&birthDate!=""&email!=""&ConfirmEmail!=""&password!=""&confirmPassword!=""&checkbox=="checked")
+    
+       
+    
+    
+    
+    
+       
+    
+     
+    // }
+    // }
+// let confirmPassword= document.getElementById("confirmPassword").value
+// let checkbox= document.getElementById("checkbox").value
+
+
+// let obj={
+//     name:name+" "+lastName,
+//     phone:phone,
+//     gender:gender,
+//     birthDate:birthDate+" "+birthMonth,
+//     email:email,
+//     password:password
+// }
+// data.push(obj)
+// localStorage.setItem("register",JSON.stringify(data))
+// alert("Registeration Successfully")
+
+
+//     if(flag) submitData(); 
+//     else{
+//         alert("User Already Registerd")
+//         return 
+//     }
+// //  if  email is already registered i am return func
+// console.log("sgar");
