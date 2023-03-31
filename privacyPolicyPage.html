@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/index.css">
     <title>Document</title>
     <style>
         #cont{
@@ -17,6 +18,334 @@
     </style>
 </head>
 <body>
+    <nav>
+        <!-- -=-=-=-=--=--= sliding nav bar {starts} =-=-=-=--==-=-=-=- -->
+        <div class="navOne">
+            <button id="left" class="arrow" onclick="prevSlide()"> <p> &#8249; </p> </button>
+            <p id="sliders" class="sliders">Free Ship Over $50!</p>
+            <button id="right" class="arrow" onclick="nextSlide()"> <p> &#8250;</p> </button>
+        </div>
+        <!--  -=-=-=-=--=--= sliding nav bar {ends} =-=-=-=--==-=-=-=- -->
+    
+        <!-- -=-=-=-=--=--= normal nav bar {starts} -=-=-=-=--=--= -->
+        <div class="navTwo">
+            <!-- Category {starts} -->
+            <div class="categoryLinks">
+                <div id="Women" class="Women underline">
+                    <a href="#">Women</a>
+                </div>
+                <!-- ? dropdown for Women Categories {starts} -->
+                    <div class="drop forwomen" id="drop1">
+                        <div class="flexing">
+                            <div class="first">
+                                <div class="upper">
+                                    <a href="/women.html">Shop All Women</a>
+                                </div>
+                                <div class="lower">
+                                    <a href="/women.html"><p>New Arrivals</p></a>
+                                    <a href="/women.html" class="arrow"><p>Tops</p></a>
+                                    <a href="/women.html" class="arrow"><p>Bottoms</p></a>
+                                    <a href="/women.html" class="arrow"><p>Dresses + Rompers</p></a>
+                                    <a href="/women.html" class="arrow"><p>Hoodies + Sweats</p></a>
+                                    <a href="/women.html" class="arrow"><p>Loungewear</p></a>
+                                    <a href="/women.html" class="arrow"><p>Swimwear</p></a>
+                                    <a href="/women.html" class="arrow"><p>Outerwear</p></a>
+                                    <a href="/women.html" class="arrow"><p>Accessories</p></a>
+                                    <a href="/women.html" class="arrow"><p>Bralettes + Undies</p></a>
+                                    <a href="/women.html"><p>Fragnance</p></a>
+                                </div>
+                            </div>
+                            <div class="second">
+                                <div class="top saming">
+                                    <div class="topupper">
+                                        <a href="#">Shop All Top</a>
+                                    </div>
+                                    <div class="toplower">
+                                        <a href="#"><p>Knit Tops</p></a>
+                                        <a href="#"><p>Hoodies + Sweatshirts</p></a>
+                                        <a href="#"><p>Graphic Tees</p></a>
+                                        <a href="#"><p>Camis + Tanks</p></a>
+                                        <a href="#"><p>Shirt + Blouses</p></a>
+                                        <a href="#"><p>Sweaters</p></a>
+                                        <a href="#"><p>Polos</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third">
+                                <div class="links">
+                                    <div class="top saming">
+                                        <div class="topupper">
+                                            <a href="#">Collection</a>
+                                        </div>
+                                        <div class="toplower">
+                                            <a href="#"><p>Aero | Coca-Cola@</p></a>
+                                            <a href="#"><p>Aero dwntme</p></a>
+                                            <a href="#"><p>The NBA Shop</p></a>
+                                            <a href="#"><p>The Cargo Edit</p></a>
+                                            <a href="#"><p>Spring Break Shop</p></a>
+                                            <a href="#"><p>Aero Impact</p></a>
+                                            <a href="#"><p>Matching Sets</p></a>
+                                            <a href="#"><p>Multipacks</p></a>
+                                            <a href="#"><p>Uniform</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="imag">
+                                <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-site-catalog-aeropostale/default/dw377b5db8/menu-banners/2022/122322/MENU_Women%402x-min.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                <!-- ? dropdown for Women Categories {ends} -->
+                <div id="Men" class="Men underline">
+                    <a href="#">Men</a>
+                </div>
+                <!-- ? dropdown for Men Categories {starts} -->
+                <div class="drop forwomen" id="drop2">
+                    <div class="flexing">
+                        <div class="first">
+                            <div class="upper">
+                                <a href="/women.html">Shop All Women</a>
+                            </div>
+                            <div class="lower">
+                                <a href="/women.html"><p>New Arrivals</p></a>
+                                <a href="/women.html" class="arrow"><p>Tops</p></a>
+                                <a href="/women.html" class="arrow"><p>Bottoms</p></a>
+                                <a href="/women.html" class="arrow"><p>Dresses + Rompers</p></a>
+                                <a href="/women.html" class="arrow"><p>Hoodies + Sweats</p></a>
+                                <a href="/women.html" class="arrow"><p>Loungewear</p></a>
+                                <a href="/women.html" class="arrow"><p>Swimwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Outerwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Accessories</p></a>
+                                <a href="/women.html" class="arrow"><p>Bralettes + Undies</p></a>
+                                <a href="/women.html"><p>Fragnance</p></a>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="top saming">
+                                <div class="topupper">
+                                    <a href="#">Shop All Top</a>
+                                </div>
+                                <div class="toplower">
+                                    <a href="#"><p>Knit Tops</p></a>
+                                    <a href="#"><p>Hoodies + Sweatshirts</p></a>
+                                    <a href="#"><p>Graphic Tees</p></a>
+                                    <a href="#"><p>Camis + Tanks</p></a>
+                                    <a href="#"><p>Shirt + Blouses</p></a>
+                                    <a href="#"><p>Sweaters</p></a>
+                                    <a href="#"><p>Polos</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div class="links">
+                                <div class="top saming">
+                                    <div class="topupper">
+                                        <a href="#">Collection</a>
+                                    </div>
+                                    <div class="toplower">
+                                        <a href="#"><p>Aero | Coca-Cola@</p></a>
+                                        <a href="#"><p>Aero dwntme</p></a>
+                                        <a href="#"><p>The NBA Shop</p></a>
+                                        <a href="#"><p>The Cargo Edit</p></a>
+                                        <a href="#"><p>Spring Break Shop</p></a>
+                                        <a href="#"><p>Aero Impact</p></a>
+                                        <a href="#"><p>Matching Sets</p></a>
+                                        <a href="#"><p>Multipacks</p></a>
+                                        <a href="#"><p>Uniform</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imag">
+                            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-site-catalog-aeropostale/default/dwc883f5eb/menu-banners/2022/122322/MENU_Men%402x-min.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ? dropdown for Men Categories {ends} -->
+                <div id="Jeans" class="Jeans underline">
+                    <a href="#" class="jeans">Jeans</a>
+                </div>
+                <!-- ? dropdown for Jeans Categories {starts} -->
+                <div class="drop forwomen" id="drop3">
+                    <div class="flexing">
+                        <div class="first">
+                            <div class="upper">
+                                <a href="/women.html">Shop All Women</a>
+                            </div>
+                            <div class="lower">
+                                <a href="/women.html"><p>New Arrivals</p></a>
+                                <a href="/women.html" class="arrow"><p>Tops</p></a>
+                                <a href="/women.html" class="arrow"><p>Bottoms</p></a>
+                                <a href="/women.html" class="arrow"><p>Dresses + Rompers</p></a>
+                                <a href="/women.html" class="arrow"><p>Hoodies + Sweats</p></a>
+                                <a href="/women.html" class="arrow"><p>Loungewear</p></a>
+                                <a href="/women.html" class="arrow"><p>Swimwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Outerwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Accessories</p></a>
+                                <a href="/women.html" class="arrow"><p>Bralettes + Undies</p></a>
+                                <a href="/women.html"><p>Fragnance</p></a>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="top saming">
+                                <div class="topupper">
+                                    <a href="#">Shop All Top</a>
+                                </div>
+                                <div class="toplower">
+                                    <a href="#"><p>Knit Tops</p></a>
+                                    <a href="#"><p>Hoodies + Sweatshirts</p></a>
+                                    <a href="#"><p>Graphic Tees</p></a>
+                                    <a href="#"><p>Camis + Tanks</p></a>
+                                    <a href="#"><p>Shirt + Blouses</p></a>
+                                    <a href="#"><p>Sweaters</p></a>
+                                    <a href="#"><p>Polos</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div class="links">
+                                <div class="top saming">
+                                    <div class="topupper">
+                                        <a href="#">Collection</a>
+                                    </div>
+                                    <div class="toplower">
+                                        <a href="#"><p>Aero | Coca-Cola@</p></a>
+                                        <a href="#"><p>Aero dwntme</p></a>
+                                        <a href="#"><p>The NBA Shop</p></a>
+                                        <a href="#"><p>The Cargo Edit</p></a>
+                                        <a href="#"><p>Spring Break Shop</p></a>
+                                        <a href="#"><p>Aero Impact</p></a>
+                                        <a href="#"><p>Matching Sets</p></a>
+                                        <a href="#"><p>Multipacks</p></a>
+                                        <a href="#"><p>Uniform</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imag">
+                            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-site-catalog-aeropostale/default/dwb7537e11/menu-banners/2022/122322/MENU_Jeans%402x-min.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ? dropdown for Jeans Categories {ends} -->
+                <div id="Clearance" class="Clearance underline">
+                    <a href="#">Clearance</a>
+                </div>
+                <!-- ? dropdown for Clearance Categories {starts} -->
+                <div class="drop forwomen" id="drop4">
+                    <div class="flexing">
+                        <div class="first">
+                            <div class="upper">
+                                <a href="/women.html">Shop All Women</a>
+                            </div>
+                            <div class="lower">
+                                <a href="/women.html"><p>New Arrivals</p></a>
+                                <a href="/women.html" class="arrow"><p>Tops</p></a>
+                                <a href="/women.html" class="arrow"><p>Bottoms</p></a>
+                                <a href="/women.html" class="arrow"><p>Dresses + Rompers</p></a>
+                                <a href="/women.html" class="arrow"><p>Hoodies + Sweats</p></a>
+                                <a href="/women.html" class="arrow"><p>Loungewear</p></a>
+                                <a href="/women.html" class="arrow"><p>Swimwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Outerwear</p></a>
+                                <a href="/women.html" class="arrow"><p>Accessories</p></a>
+                                <a href="/women.html" class="arrow"><p>Bralettes + Undies</p></a>
+                                <a href="/women.html"><p>Fragnance</p></a>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="top saming">
+                                <div class="topupper">
+                                    <a href="#">Shop All Top</a>
+                                </div>
+                                <div class="toplower">
+                                    <a href="#"><p>Knit Tops</p></a>
+                                    <a href="#"><p>Hoodies + Sweatshirts</p></a>
+                                    <a href="#"><p>Graphic Tees</p></a>
+                                    <a href="#"><p>Camis + Tanks</p></a>
+                                    <a href="#"><p>Shirt + Blouses</p></a>
+                                    <a href="#"><p>Sweaters</p></a>
+                                    <a href="#"><p>Polos</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div class="links">
+                                <div class="top saming">
+                                    <div class="topupper">
+                                        <a href="#">Collection</a>
+                                    </div>
+                                    <div class="toplower">
+                                        <a href="#"><p>Aero | Coca-Cola@</p></a>
+                                        <a href="#"><p>Aero dwntme</p></a>
+                                        <a href="#"><p>The NBA Shop</p></a>
+                                        <a href="#"><p>The Cargo Edit</p></a>
+                                        <a href="#"><p>Spring Break Shop</p></a>
+                                        <a href="#"><p>Aero Impact</p></a>
+                                        <a href="#"><p>Matching Sets</p></a>
+                                        <a href="#"><p>Multipacks</p></a>
+                                        <a href="#"><p>Uniform</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imag">
+                            <img src="https://www.aeropostale.com/on/demandware.static/-/Sites-site-catalog-aeropostale/default/dw6916a878/menu-banners/2022/122322/MENU_Clearance%402x-min.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ? dropdown for Clearance Categories {ends} -->
+            </div>
+            <!-- Category {ends} -->
+    
+            <!-- Logo {starts} -->
+            <div class="logo">
+                <div class="img">
+                    <a href="index.html">
+                        <img src="/images/logo2.png" alt="logo+link">
+                    </a>
+                </div>
+            </div>
+            <!-- Logo {ends} -->
+                
+            <!-- login, wishlist, cart and search {starts}-->
+            <div class="Loginlinks" id="Loginlinks">
+                <div class="search">
+                    <input type="search" placeholder=" &nbsp; &nbsp; Search" />
+                </div>
+                <div class="links">
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2767/2767018.png" alt="heart">
+                    </a>
+                </div>
+                <div class="links">
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="location">
+                    </a>
+                </div>
+                <div class="links userIcon" id="userIcon">
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9308/9308008.png" alt="user">
+                    </a>
+                <!-- ? here is a dropdown for login/register {starts} -->
+                    <div class="dropUser" id="dropUser">
+                        <button class="margin register"><a href="/register.html">Register</a></button>
+                        <button class="signin"><a href="/signInPage.html">Sign In </a></button>
+                        <a href="#">Track an Order</a>
+                        <a href="#">Get Help</a>
+                    </div>
+                <!-- ? here is a dropdown for login/register {ends} -->
+                </div>
+                <div class="links">
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/128/102/102665.png" alt="bag">
+                    </a>
+                </div>
+            </div>
+            <!-- login, wishlist, cart and search {ends}-->
+        </div>
+        <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
+        </nav>
     <div id="cont">
         <h3>Privacy Policy</h3>
         <p class="text">
@@ -81,4 +410,5 @@ The security of your information is important to us. We have implemented various
     </div>
 
 </body>
+<script src="/script/index.js"></script>p
 </html>

@@ -17,6 +17,9 @@
       }
     ],
     "axe/name-role-value": "off",
-    "axe/forms": "off"
+    "axe/forms": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/paint": "off",
+    "axe/keyboard": "off"
   }
 }
