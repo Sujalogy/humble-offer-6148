@@ -16,9 +16,6 @@ editProductForm.addEventListener("submit", function(e){
 
     
     editProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize, productColor);
-    // productsArray.push(productObj);
-    
-    // localStorage.setItem("products", JSON.stringify(productsArray));
 });
 
 function editProduct(productId, productImg1, productImg2, productCategory, productDesc, price, compPrice, productSize,productColor){
