@@ -139,7 +139,7 @@ function loginel() {
 let login = JSON.parse(localStorage.getItem("login"))||null
 
 if(login){
-    let dropUser = document.getElementById("dropUser")
+    let dropUser = document.getElementById("dropUser");
     dropUser.innerHTML=""
     let signout= document.getElementById("signout")
     dropUser.innerHTML=signout.innerHTML
