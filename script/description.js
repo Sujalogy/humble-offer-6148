@@ -66,35 +66,35 @@ dropdowns.forEach(dropdown=>{
     
     // We are using this method in order to have multiple dropdown menus on the page work
 
-    //  add a click event to the select element
-    select.addEventListener("click",()=>{
-        //  Add the clicked select styles to the select element 
-        select.classList.toggle("select-clicked")
-        // account[0].style.marginBottom="100px"
-    //  Add the rotate styles to the caret element
-        caret.classList.toggle("caret-rotate")
-        // Add the open styles to the menu element
-        menu.classList.toggle("menu-open")
-        // account[0].style.marginBottom="1px"
-        account[0].classList.toggle("select-dropdown")
-    })
+//     //  add a click event to the select element
+//     select.addEventListener("click",()=>{
+//         //  Add the clicked select styles to the select element 
+//         select.classList.toggle("select-clicked")
+//         // account[0].style.marginBottom="100px"
+//     //  Add the rotate styles to the caret element
+//         caret.classList.toggle("caret-rotate")
+//         // Add the open styles to the menu element
+//         menu.classList.toggle("menu-open")
+//         // account[0].style.marginBottom="1px"
+//         account[0].classList.toggle("select-dropdown")
+//     })
 
     
 
-    //  loop through all option elements
-    options.forEach(option =>{
+//     //  loop through all option elements
+//     options.forEach(option =>{
 
-        option.addEventListener("click",()=>{
-            selected.innerText=option.innerText;
-            account[0].classList.remove("select-dropdown")
-            select.classList.remove("select-clicked")
-            // account[0].style.marginBottom="0px"
-            caret.classList.remove("caret-rotate")
-            menu.classList.remove("menu-open")
-             options.forEach(option=>{
-                option.classList.remove("active")
-             })
-             option.classList.add("active")
-        })
-    })
-})
+//         option.addEventListener("click",()=>{
+//             selected.innerText=option.innerText;
+//             account[0].classList.remove("select-dropdown")
+//             select.classList.remove("select-clicked")
+//             // account[0].style.marginBottom="0px"
+//             caret.classList.remove("caret-rotate")
+//             menu.classList.remove("menu-open")
+//              options.forEach(option=>{
+//                 option.classList.remove("active")
+//              })
+//              option.classList.add("active")
+//         })
+//     })
+// })
