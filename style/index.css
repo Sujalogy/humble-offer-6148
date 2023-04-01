@@ -373,5 +373,95 @@ video{
 /* *-------------------------------------------------------------------- */
 
 /* ? ===========================here is FOOTER {starts}  */
+.footer {
+    height: 475px;
+    display: grid;
+    border: 1px solid #e0e0e0;
+} 
 
+.footer > .one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 412px;
+    width: 220px;
+} .footer > .one img {
+    width: 20px;
+} .footer > .one > .arr1 {
+    height: 150px;
+    margin-top: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}  .footer > .one > .arr1 > .col {
+    display: flex;
+    align-items: center;
+} .footer > .one > .arr1 > .col > a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    color: black;
+} .footer > .one > .arr1 > .col > a:hover {
+    text-decoration: underline;
+}
+
+.footer > .two {
+    /* border: 1px solid #000; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 412px;
+    width: 220px;
+    display: grid;
+} .footer > .two > .arr2 {
+    display: grid;
+    height: 310px;
+    width: 190px;
+    /* border: 1px solid #000; */
+    margin-top: 58px;
+    margin-left: 17px;
+} .footer > .two > .arr2 > .help > p{
+    font-weight: 600;
+} .footer > .two > .arr2 > .linkss {
+    display: grid;
+    margin-top: -70px;
+    gap: 9px;
+} .footer > .two > .arr2 > .linkss > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+} .footer > .two > .arr2 > .linkss > a:hover {
+    text-decoration: underline;
+}
+
+.footer > .three {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 412px;
+    width: 220px;
+}
+
+.footer > .four {
+    /* border: 1px solid #000; */
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 412px;
+    width: 220px;
+}  
+.footer > .five {
+    /* border: 1px solid #000; */
+    grid-column-start: 5;
+    grid-column-end: 6;
+    height: 412px;
+    width: 375px;
+}  
+.footer > .six {
+    /* border: 1px solid #000; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 60px;
+    background-color: #f2f2f2;
+}
 /* ? ===========================here is FOOTER {ends}  */
