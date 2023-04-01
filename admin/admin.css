@@ -103,12 +103,12 @@ small{
     font-size: 0.75rem;
 }
 
-/* .profile-photo{
+.profile-photo{
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
     overflow: hidden;
-} */
+}
 
 .text-muted{
     color: var(--color-info-dark);
@@ -231,7 +231,40 @@ main{
     margin-top: 1.4rem;
 }
 
-main .date{
+
+.modify{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    background: var(--color-white);
+    border-radius: var(--border-radius-3);
+}
+
+.plus-btn, .edit-btn{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-btn{
+    background-color: rgb(100, 112, 200);
+}
+
+.edit-btn{
+    background-color: rgb(100, 112, 200);
+}
+
+main span{
+    color: white;
+}
+
+/* main .date{
     display: inline-block;
     background: var(--color-light);
     border-radius: var(--border-radius-1);
@@ -242,9 +275,9 @@ main .date{
 main .date input[type="date"]{
     background: transparent;
     color: var(--color-dark);
-}
+} */
 
-main .insights{
+/* main .insights{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
@@ -342,7 +375,7 @@ main .insights .progress .number{
 main .insights small{
     margin-top: 1.3rem;
     display: block;
-}
+} */
 
 main .recent-orders{
     margin-top: 2rem;
@@ -399,7 +432,7 @@ main .recent-orders a{
     display: none;
 }
 
-.right .theme-toggler{
+/* .right .theme-toggler{
     background: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -423,7 +456,7 @@ main .recent-orders a{
     background: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
-}
+} */
 
 .right .top .profile{
     display: flex;
@@ -464,7 +497,11 @@ main .recent-orders a{
         gap: 0;
     }
 
-    main .recent-orders{
+    .modify{
+        width: 140%;
+    }
+
+    /* main .recent-orders{
         width: 94%;
         position: absolute;
         left: 50%;
@@ -474,11 +511,11 @@ main .recent-orders a{
 
     main .recent-orders table{
         width: 84vw;
-    }
+    } */
 
-    main table thead tr th:nth-child(2), main table tbody tr td:nth-child(2), main table tbody tr td:last-child{
+    /* main table thead tr th:nth-child(2), main table tbody tr td:nth-child(2), main table tbody tr td:last-child{
         display: none;
-    }
+    } */
 }
 
 
@@ -540,7 +577,11 @@ main .recent-orders a{
         padding: 0 1rem;
     }
 
-    main .recent-orders{
+    .modify{
+        width: 90%;
+    }
+
+    /* main .recent-orders{
         position: relative;
         margin: 3rem 0 0 0;
         width: 100%;
@@ -549,7 +590,7 @@ main .recent-orders a{
     main .recent-orders table{
         width: 100%;
         margin: 0;
-    }
+    } */
 
     .right{
         width: 94%;
@@ -570,11 +611,11 @@ main .recent-orders a{
         box-shadow: 0 1rem 1rem var(--color-light);
     }
 
-    .right .top .theme-toggler{
+    /* .right .top .theme-toggler{
         width: 4.4rem;
         position: absolute;
         left: 66%;
-    }
+    } */
 
     .right .profile .info{
         display: none;

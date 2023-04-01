@@ -1,0 +1,113 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navTwo > .categoryLinks {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} .categoryLinks a {
+    text-decoration: none;
+    color: #172749;
+    padding: 4px 0px 4px 0px;
+} .categoryLinks a:hover {
+    border-bottom: 2px solid #172749;
+    cursor: pointer;
+}
+
+.navTwo > .logo img {
+    width: 128px;
+}
+
+.navTwo > .Loginlinks {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;    
+} .Loginlinks img {
+    width: 20px;
+    height: 20px;
+}
+/* ? ===========================here is navTwo {ends}  */
+#main_cart{
+    display: flex;
+    /* border: 2px solid orange; */
+    justify-content: space-between;
+}
+#item{
+    /* border: 2px solid orangered; */
+    width:70%;
+    display: flex;
+}
+#order_summary{
+    /* border: 2px solid red; */
+    width:30%;
+    margin-left: 50px;
+    background-color: rgb(235,234,231);
+    height: fit-content;
+    margin-right: 30px;
+    }
+ 
+#checkout{
+    width:99%;
+    background-color: rgb(30,51,82);
+    color: white;
+    height: 60px;
+    display: block;
+    margin: auto ;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+#td_label{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* padding-right: 100px; */
+}
+.spanEl{
+    float: right;
+    padding-left: 80px;
+}
+#button_img{
+    background-color:rgb(255,196,57);
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    display:block;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+}
+#title{
+    border: 2px solid navy;
+    /* height: 100px; */
+    width:40%;
+    height:600px;
+
+
+}
+.select_quantity{
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+}
+.imageEl{
+    width:200px
+}
+.removeEl{
+    width: 80px;
+    margin-top: 20px;
+    height: 30px;
+}
