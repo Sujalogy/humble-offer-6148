@@ -465,3 +465,22 @@ video{
     background-color: #f2f2f2;
 }
 /* ? ===========================here is FOOTER {ends}  */
+=======
+
+
+
+/* signout */
+#signout{
+    display: none;
+    position: absolute;
+    width: 240px;
+    height: 211px;
+    top: 110px;
+    right: 46px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+/* #userIcon:hover{
+
+} *

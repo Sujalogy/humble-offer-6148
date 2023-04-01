@@ -123,4 +123,13 @@ size.innerText ="Size: " + `${storageData.size}`
 price.innerText = `${storageData.price}`
 
 
-descriptionDiv.append(title,color,size,)
+descriptionDiv.append(title,color,size,price)
+
+
+let btn = document.getElementById("btn")
+btn.addEventListener("click",clickButton)
+function clickButton()
+{
+  // window.location.replace="./thankyou.html"
+  window.location.replace("./thankyou.html")
+}

@@ -8,13 +8,20 @@ form.addEventListener("submit",(e)=>{
     let email= document.getElementById("email").value
     let password= document.getElementById("password").value
     let flag=false
-    data.forEach((el)=>{
-        if(el.email==email&&el.password===password)
+   if(email=="admin"&&password=="admin")
+   {
+    window.location.href="./admin/admin.html"
+    console.log("sagar")
+        
+   }    
+   else{    
+   for(let i=0;i<data.length;i++){
+        if(data[i].email===email&&data[i].password===password)
         {
             flag=true
-            localStorage.setItem("login",JSON.stringify(el))
+            localStorage.setItem("login",JSON.stringify(data[i]))
         }
-    })
+    }
     if(flag)
     {
         alert("Login Successfully")
@@ -23,7 +30,7 @@ form.addEventListener("submit",(e)=>{
     else{
         alert("Enter correct Email Id Password")
     }
-
+    }
 
 })
 

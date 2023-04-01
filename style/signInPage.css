@@ -11,11 +11,16 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+#cont{
+    height: 200px;
+}
 h3{
     color:rgb(30, 46, 108);
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 form{
     display: grid;
@@ -68,10 +73,18 @@ form{
     justify-content: space-between;
     align-items: center;
     /* text-align: center; */
-}
+    padding: 1px;
+    /* border: none; */
+    border: 1px solid #000;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}   
 #facebook img{
     width: 20px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+ 
 }
 
 
@@ -81,6 +94,7 @@ form{
 /* new customer css here */
 #createAccount{
     padding: 10px;
+    
     background-color: white;
     font-weight: bold;
     font-size: small;
@@ -103,6 +117,7 @@ form{
     width: 40%;
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 100px;
 }
 #trackOrder input{
     box-sizing: border-box;
@@ -110,17 +125,35 @@ form{
     padding: 10px;
 }
 
+form #checkStatus{
+    
+    height: 40px;
+}
 
 #checkStatus{
+
     width: 200px;
     background-color: #fff;
     font-weight: bold;
     cursor: pointer;
-    box-sizing: border-box;
-    /* height: 60px; */
+    
+    /* box-sizing: border-box; */
     /* border: 1px solid red; */
 }
 #checkStatus:hover{
     background-color:  rgb(23,39,74);
     color: white;
+}
+
+
+
+
+
+/*  media query */
+
+@media only screen and (max-width:749px) {
+    #container{
+        /* display: grid; */
+        grid-template-columns: repeat(1,1fr);
+    }
 }
