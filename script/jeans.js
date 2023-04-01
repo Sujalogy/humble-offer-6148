@@ -293,3 +293,60 @@ function display(data){
 }
 // Product Section JS End
 
+
+// Search funtionality Start
+
+// Select the search input element and product list container
+const searchInput = document.querySelector("#searchforData");
+const productList = document.querySelector("#container");
+
+// Add event listener for the search input
+searchInput.addEventListener("input", () => {
+    // Get the search query from the input value
+    const searchQuery = searchInput.value.toLowerCase();
+
+    // Call the API endpoints for each category and search for matching products
+    const apiEndpoints = [
+        "http://127.0.0.1:3000/api/women",
+        "http://127.0.0.1:3000/api/men",
+        "http://127.0.0.1:3000/api/jeans",
+        "http://127.0.0.1:3000/api/collection"
+    ];
+
+    // Use Promise.all() to fetch data from all API endpoints simultaneously
+    Promise.all(apiEndpoints.map(endpoint => fetch(endpoint)))
+        .then(responses => Promise.all(responses.map(res => res.json())))
+        .then(data => {
+            // Flatten the array of products into a single array
+            const products = data.flat();
+
+            // Filter the products based on the search query
+            const filteredProducts = products.filter(product => {
+                const desc = product.desc.toLowerCase();
+                const category = product.category.toLowerCase();
+                return desc.includes(searchQuery) || category.includes(searchQuery);
+            });
+
+            // Render the filtered products in the product list container
+
+            display(filteredProducts)
+            // productList.innerHTML = "";
+            // filteredProducts.forEach(product => {
+            //     const productElement = document.createElement("div");
+            //     productElement.innerHTML = `
+            //         <h2>${product.name}</h2>
+            //         <p>${product.desc}</p>
+            //         <img src="${product.image}">
+            //     `;
+            //     productList.appendChild(productElement);
+            // });
+        })
+        .catch(error => console.log(error));
+});
+
+
+// Search funtionality End
+
+
+
+
