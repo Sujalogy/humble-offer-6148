@@ -11,11 +11,16 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+#cont{
+    height: 200px;
+}
 h3{
     color:rgb(30, 46, 108);
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 25px;
 }
 form{
     display: grid;
@@ -68,10 +73,18 @@ form{
     justify-content: space-between;
     align-items: center;
     /* text-align: center; */
-}
+    padding: 1px;
+    /* border: none; */
+    border: 1px solid #000;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}   
 #facebook img{
     width: 20px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+ 
 }
 
 
@@ -103,6 +116,7 @@ form{
     width: 40%;
     margin: auto;
     margin-top: 70px;
+    margin-bottom: 100px;
 }
 #trackOrder input{
     box-sizing: border-box;
@@ -123,4 +137,17 @@ form{
 #checkStatus:hover{
     background-color:  rgb(23,39,74);
     color: white;
+}
+
+
+
+
+
+/*  media query */
+
+@media only screen and (max-width:749px) {
+    #container{
+        /* display: grid; */
+        grid-template-columns: repeat(1,1fr);
+    }
 }

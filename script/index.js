@@ -120,3 +120,30 @@ underline.addEventListener("mouseover", ()=>{
 // ? here is dropdown for Category Links {ends}
 
 // ! --------------------------------------------------------------------
+
+
+
+
+//  signout functionlity
+
+let login = JSON.parse(localStorage.getItem("login"))||[]
+
+if(login){
+    let dropUser = document.getElementById("dropUser")
+    dropUser.style.display="none"
+    let singout= document.getElementById("signout")
+    singout.style.display="block"
+}
+
+let singout= document.getElementById("signout")
+singout.addEventListener("click",()=>{
+    localStorage.removeItem("login")
+//    location.reload()
+})
+
+
+let userIcon= document.getElementById("UserIcon")
+userIcon.addEventListener("mousemove",()=>{
+    let singout= document.getElementById("singout")
+    // singout.style.hover="display:block"
+})
