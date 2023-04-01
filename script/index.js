@@ -126,24 +126,50 @@ underline[0].addEventListener("mouseover", ()=>{
 
 //  signout functionlity
 
-let login = JSON.parse(localStorage.getItem("login"))||[]
+let login = JSON.parse(localStorage.getItem("login"))||null
 
 if(login){
     let dropUser = document.getElementById("dropUser")
-    dropUser.style.display="none"
-    let singout= document.getElementById("signout")
-    singout.style.display="block"
+    dropUser.innerHTML=""
+    let signout= document.getElementById("signout")
+    dropUser.innerHTML=signout.innerHTML
+    dropUser.style.height="100px"
+    let sign= document.getElementById("sign")
+    sign.addEventListener("click",()=>{
+        window.location.href="./index.html"
+        localStorage.removeItem("login")
+        setTimeout(()=>{
+                dropUser.innerHTML=`
+                <button class="margin register"><a href="./register.html">Register</a></button>
+                <button class="signin"><a href="./signInPage.html">Sign In </a></button>
+                <a href="#">Track an Order</a>
+                <a href="#">Get Help</a>
+                `
+
+        },1000)
+    })
+
+    // dropUser.style.height="3px"
 }
 
-let singout= document.getElementById("signout")
-singout.addEventListener("click",()=>{
-    localStorage.removeItem("login")
-//    location.reload()
-})
+let signout= document.getElementById("signout")
+signout.addEventListener("click", signOutFunction)
+
+function signOutFunction(){
+    
+    // localStorage.removeItem("login")
+    let dropUser = document.getElementById("dropUser")
+    dropUser.style.display="block"
+    let signout= document.getElementById("signout")
+    signout.style.display="none"
+
+}
 
 
-let userIcon= document.getElementById("UserIcon")
-userIcon.addEventListener("mousemove",()=>{
-    let singout= document.getElementById("singout")
-    // singout.style.hover="display:block"
-})
+
+// let userIcon= document.getElementById("UserIcon")
+// userIcon.addEventListener("mouseover",()=>{
+//     let singout= document.getElementById("singout")
+//     console.log(signout)
+//     // singout.style.hover="display:block"
+// })

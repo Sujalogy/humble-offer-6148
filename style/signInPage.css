@@ -94,6 +94,7 @@ form{
 /* new customer css here */
 #createAccount{
     padding: 10px;
+    
     background-color: white;
     font-weight: bold;
     font-size: small;
@@ -124,14 +125,19 @@ form{
     padding: 10px;
 }
 
+form #checkStatus{
+    
+    height: 40px;
+}
 
 #checkStatus{
+
     width: 200px;
     background-color: #fff;
     font-weight: bold;
     cursor: pointer;
-    box-sizing: border-box;
-    /* height: 60px; */
+    
+    /* box-sizing: border-box; */
     /* border: 1px solid red; */
 }
 #checkStatus:hover{
