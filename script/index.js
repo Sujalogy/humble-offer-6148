@@ -114,7 +114,7 @@ drop4.addEventListener("mouseout", ()=> {
 
 let underline = document.getElementsByClassName("underline");
 let anchors = document.querySelectorAll(".underline > a")
-underline.addEventListener("mouseover", ()=>{
+underline[0].addEventListener("mouseover", ()=>{
     anchors.style.borderBottom = "2px solid #172749";
 })
 // ? here is dropdown for Category Links {ends}

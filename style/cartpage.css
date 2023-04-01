@@ -1,0 +1,40 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+.navTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navTwo > .categoryLinks {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} .categoryLinks a {
+    text-decoration: none;
+    color: #172749;
+    padding: 4px 0px 4px 0px;
+} .categoryLinks a:hover {
+    border-bottom: 2px solid #172749;
+    cursor: pointer;
+}
+
+.navTwo > .logo img {
+    width: 128px;
+}
+
+.navTwo > .Loginlinks {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    align-items: center;    
+} .Loginlinks img {
+    width: 20px;
+    height: 20px;
+}
+/* ? ===========================here is navTwo {ends}  */

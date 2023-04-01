@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style/jeans.css">
+</head>
+<body>
+    
+    <!-- Navigation bar start -->
+    
+    <!-- Navigation bar End -->
+
+    <!-- Filter section && Sort Section Start -->
+    <div class="containerFS">
+        <div class="top">
+            <div class="filter" onclick="this.parentElement.classList.toggle('open')">
+                <span class="material-symbols-outlined"></span>
+                <b> Filter</b>
+            </div>
+            <div class="sort">
+                <label for="btn">
+                    <section>
+                        <span class="material-symbols-outlined">
+                            sort_by_alpha
+                            </span>
+                        <b>Best Sellers </b>
+                    </section>
+                <input type="checkbox" name="" id="btn">
+                <ul>
+                    <li>Featured</li>
+                    <li id="sortNew">New Arrivals</li>
+                    <li id="sortPriceLow">Price High to Low</li>
+                    <li id="sortPriceHigh">Price Low to High</li>
+                </ul>
+            </label>
+            </div>
+        </div>
+        <div class="content">
+            <div class="filter-container">
+                <div class="filter-content">
+                    <div class="filter-title" onclick="this.classList.toggle('open')">
+                        <b>Size</b>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-item" data-count="23" data-text="S" id="filterS"></div>
+                        <div class="filter-item" data-count="33" data-text="M" id="filterM"></div>
+                        <div class="filter-item" data-count="45" data-text="L" id="filterL"></div>
+                        <div class="filter-item" data-count="19" data-text="XL" id="filterXL"></div>
+                    </div>
+                </div>
+                <div class="filter-content">
+                    <div class="filter-title" onclick="this.classList.toggle('open')">
+                        <b>Color</b>
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                    <div class="filter-options">
+                        <div class="filter-item" style="--color: black" data-count="33" id="colorBlack"></div>
+                        <div class="filter-item" style="--color: green" data-count="22" id="colorGreen"></div>
+                        <div class="filter-item" style="--color: blue" data-count="4" id="colorBlue"></div>
+                        <div class="filter-item" style="--color: violet" data-count="23" id="colorViolet"></div>
+                        <div class="filter-item" style="--color: gold" data-count="33" id="colorGolden"></div>
+                        <div class="filter-item" style="--color: red" data-count="45" id="colorRed"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="container">
+
+            </div>
+            <!-- <div class="page-container">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div> -->
+        </div>
+    </div>
+    <!-- Filter section && Sort Section End -->
+    <!-- Product's data fetch from JSON-SERVER -->
+</body>
+    <script src="./script/jeans.js"></script>
+</html>

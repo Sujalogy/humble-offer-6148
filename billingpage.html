@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/billingpage.css">
-    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
    
@@ -349,7 +349,7 @@
         <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
         </nav>
     <hr>
-   <div id="main">
+   <div style="margin-top: 150px;" id="main">
         <h2 style="margin-top: 50px;">1.SHIPPING</h2>
    
         <div id="shipping">
@@ -363,7 +363,7 @@
                     </ul>
                 </div>
                 <div id="shopping_method"> 
-                <h3>SHIPPING METHOD</h3>
+                <h3 style="margin-top: -25px;">SHIPPING METHOD</h3>
                     <ul id="payment_id">
                         <!--  <li> -->
                             <!-- append the data -->
@@ -389,9 +389,10 @@
                 <br>
                 <div id="form_div">
                     <ul id="unorder">
-                        <!--  <li> -->
+                         <li>
+                            <input type="radio"> <label id="unorder_label"for=""></label>
                             <!-- append the data -->
-                        <!-- </li>  -->
+                        </li> 
                     </ul>
                     <ul>
                         <li>
@@ -439,7 +440,7 @@
                         <td id="payment_td">
                             <div id="credit">
                                 <input type="radio" name="option" onclick="showDropdown()">
-                                <img id="card_id" src="https://www.aeropostale.com/on/demandware.static/Sites-aeropostale-Site/-/default/dwe33d2fc5/images/cc_icon.svg" alt=""> 
+                                <img style="margin-left: 10px;margin-right: 10px;"id="card_id" src="https://www.aeropostale.com/on/demandware.static/Sites-aeropostale-Site/-/default/dwe33d2fc5/images/cc_icon.svg" alt=""> 
                                 <span class="text">Credit Card</span>
 
                             </div>    
@@ -502,7 +503,7 @@
                         <td id="payment_td">
                                 <div id="credit">
                                     <input type="radio" name="option" onclick="showDropdown1()">
-                                    <img id="payPal" src="https://www.aeropostale.com/on/demandware.static/Sites-aeropostale-Site/-/default/dw772bfea5/images/paypal_icon.png" alt=""> 
+                                    <img style="margin-left: 10px;margin-right: 10px;"id="payPal" src="https://www.aeropostale.com/on/demandware.static/Sites-aeropostale-Site/-/default/dw772bfea5/images/paypal_icon.png" alt=""> 
                                     <span class="text">Pay Pal</span>
                                 </div>
                             <div id="dropdown1" style="display:none;">
@@ -515,7 +516,7 @@
                         <td id="payment_td">
                             <div id="credit">
                                 <input type="radio" name="option" onclick="showDropdown2()">
-                               <img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" alt=""> 4.Interest-Free Payments
+                               <img style="margin-left: 10px;margin-right: 10px;"src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" alt=""> 4.Interest-Free Payments
                             </div>
                               <div id="dropdown2" style="display:none;"></div>
                         </td>
@@ -527,21 +528,29 @@
         </div>
         <div id="order_summary">
             <div>
-                <h2 style="margin-left: 10px;">ORDER SUMMARY <span style="margin-right: 10px;font-size: 17px;margin-top: 5px;"><a href="">Edit</a></span> </h2>
+                <h2 style="margin-left: 10px;margin-top: 20px;">ORDER SUMMARY <span style="margin-right: 10px;font-size: 17px;margin-top: 5px;float: right;"><a href="">Edit</a></span> </h2>
                 <table id="order_table">
                     <tr>
-                        <td><label id="td_label" for=""><b>Subtotal</b><span></span></label></td>
+                        <td id="td_label"><label id="td_label" for=""><b>Subtotal</b><span style="float: right;" id="subtotal"></span></label></td>
                     </tr>
                     <tr>
-                        <td><label  id="td_label" for="">Shipping Economy Ground <span></span></label></td>
+                        <td id="td_label"><label  id="td_label" for="">Shipping Economy Ground <span style="float: right;">$5.00</span></label></td>
                     </tr>
                     <tr>
-                        <td><label  id="td_label" for="">Sales tax <span></span></label></td>
+                        <td id="td_label"><label  id="td_label" for="">Sales tax <span style="float: right;">$2.92</span></label></td>
                     </tr>
                     <tr>
-                        <td style="font-size: 19px;"><label  id="td_label" for=""><b>Estimated total</b><span></span></label></td>
+                        <td style="font-size: 19px;"><label style="margin-left: 10px;" id="td_label" for=""><b>Estimated total</b><span></span></label></td>
                     </tr>
                 </table>
+                <div id="append_data">
+                    <div id="img1_div">
+                       <!-- append images -->
+                    </div>
+                    <div>
+                         <!-- append all the data -->
+                    </div>
+                </div>
             </div>
             <div id="help">
                 <p style="text-align: center ;"><b>Help?</b></p>
