@@ -119,16 +119,6 @@ underline[0].addEventListener("mouseover", ()=>{
 })
 // ? here is dropdown for Category Links {ends}
 
-// login redirect buttons functionality {starts}
-function registerel() {
-    window.location.href = "/register.html";
-}
-
-function loginel() {
-    window.location.href = "/signInPage.html";
-}
-// login redirect buttons functionality {ends}
-
 // ! --------------------------------------------------------------------
 
 
