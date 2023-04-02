@@ -7,17 +7,17 @@ total()
 //  total function is showing how many product added in beg
 function total()
 {
-  id: "001",
-  img1: "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw4b9d789d/86741608_198_main.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-  img2: "https://www.aeropostale.com/dw/image/v2/BBSG_PRD/on/demandware.static/-/Sites-master-catalog-aeropostale/default/dw11ed06bb/86741608_198_alt1.jpg?sw=478&sh=557&sm=fit&sfrm=jpg",
-  category: "Limited Edition",
-  desc: "Low-Rise Flare Cargo Pants",
-  price: 35.00,
-  compprice: "64.95",
-  size: "S",
-  color: "green"
+
+  let sum = cartData.length;
+  console.log(sum);
+  
+  let total = document.getElementById("cart-total");
+  total.textContent = sum
+  console.log(total.textContent);
+
+
+
 }
-]
 
 // let sum = cartData.length
 
@@ -29,13 +29,6 @@ function total()
 // console.log(total.textContent)
 // total.append(span)
 
-let sum = cartData.length;
-console.log(sum);
-
-let total = document.getElementById("cart-total");
-total.textContent = sum + " "+"items";
-console.log(total.textContent);
-}
 
 CardDataDisplay(cartData)
 
@@ -153,10 +146,12 @@ function CardDataDisplay(data)
        
     })
     
+    
   let t =  Number(el.price)*Number(el.quantity)
     subtotal+= t
     cart.textContent =subtotal+7;
-    
+    let tom = subtotal+7
+    localStorage.setItem("Estimated-Total",JSON.stringify(tom))
     subtotalCp.innerText=subtotal
     console.log(cart.innerText);
 
@@ -168,16 +163,30 @@ function CardDataDisplay(data)
 
 //  Order Summary functionality
 
+
+
 function OrderSummary()
 {
   let subtotalCp= document.getElementById("subtotal");
-  subtotalCp.innerText = `$${total}`
- 
-}
+  subtotalCp.innerHTML=""
+  let cart= document.getElementById("cart");
+cart.innerHTML=""
+    let subtotal = 0
+    cartData.forEach((el)=>{
+          subtotal+= (+el.price)*(+el.quantity)
 
+    })
+    subtotalCp.innerText=subtotal
+    cart.innerText=subtotal+7
+    let tom = subtotal+7
+    localStorage.setItem("Estimated-Total",JSON.stringify(tom))
+  subtotalCp.innerText = subtotal
+
+}
 //  go to  checkoutout page
 let checkout = document.getElementById("checkout")
 
 checkout.addEventListener("click",()=>{
   window.location.href="./checkoutpage.html"
 })
+

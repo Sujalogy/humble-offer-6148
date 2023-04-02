@@ -203,3 +203,10 @@ input::placeholder{
     margin-top: 30px;
    
 }
+
+
+/* anchor tag  */
+#placeOrder{
+    color: white;
+    text-decoration: none;
+}
