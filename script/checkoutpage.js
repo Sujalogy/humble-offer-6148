@@ -57,5 +57,18 @@ function totalPrice() {
   subtotalCp.innerText = `$ ${total}`
  
 }
+estimatedTotal()
+ 
+function estimatedTotal() {
+  let total = 0;
+  let cartData = JSON.parse(localStorage.getItem("cartData"));
+
+  for (let i = 0; i < cartData.length; i++) {
+    total += Number(cartData[i].price);
+  }
+  let estimate= document.getElementById("estimated_total");
+  estimate.innerText =`${total+5+2.92}` 
+ 
+}
  
 

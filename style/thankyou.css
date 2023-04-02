@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url("https://s7d2.scene7.com/is/content/NauticaBrand/2020%20Videos/50%20off-DT-1.mp4");
+}
   header{
     width: 100%;
     height: 40px;
