@@ -38,7 +38,7 @@ largeSize.addEventListener("click",filterFunctionL)
 extralargeSize.addEventListener("click",filterFunctionXL)
 
 function filterFunctionS(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -50,7 +50,7 @@ function filterFunctionS(){
     .catch(error => console.error(error));
 }
 function filterFunctionM(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -62,7 +62,7 @@ function filterFunctionM(){
     .catch(error => console.error(error));
 }
 function filterFunctionL(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -74,7 +74,7 @@ function filterFunctionL(){
     .catch(error => console.error(error));
 }
 function filterFunctionXL(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -104,7 +104,7 @@ colorGolden.addEventListener("click",filterFunctionGolden)
 colorRed.addEventListener("click",filterFunctionRed)
 
 function filterFunctionBlack(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -116,7 +116,7 @@ function filterFunctionBlack(){
     .catch(error => console.error(error));
 }
 function filterFunctionGreen(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -128,7 +128,7 @@ function filterFunctionGreen(){
     .catch(error => console.error(error));
 }
 function filterFunctionBlue(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -140,7 +140,7 @@ function filterFunctionBlue(){
     .catch(error => console.error(error));
 }
 function filterFunctionViolet(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -152,7 +152,7 @@ function filterFunctionViolet(){
     .catch(error => console.error(error));
 }
 function filterFunctionGolden(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -164,7 +164,7 @@ function filterFunctionGolden(){
     .catch(error => console.error(error));
 }
 function filterFunctionRed(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -187,7 +187,7 @@ sortPriceLow.addEventListener("click",sortPriceLowP)
 sortPriceHigh.addEventListener("click",sortPriceHighP)
 
 function sortNewP(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.filter((item)=>{
@@ -199,7 +199,7 @@ function sortNewP(){
     .catch(error => console.error(error));
 }
 function sortPriceLowP(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.sort((a,b)=>b.price-a.price)
@@ -209,7 +209,7 @@ function sortPriceLowP(){
     .catch(error => console.error(error));
 }
 function sortPriceHighP(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then((data)=>{
         data=data.sort((a,b)=>a.price-b.price)
@@ -256,6 +256,7 @@ function display(data){
         categAimg.addEventListener("click",()=>{
             cartData.push(item)
             localStorage.setItem("cartData",JSON.stringify(cartData))
+            alert("Product Added to Cart...");
             cartDataSS.push(item)
             sessionStorage.setItem("cartDataSS",JSON.stringify(cartDataSS))
             // console.log(cartData)
@@ -306,10 +307,10 @@ searchInput.addEventListener("input", () => {
 
     // Call the API endpoints for each category and search for matching products
     const apiEndpoints = [
-        "http://127.0.0.1:3000/api/women",
-        "http://127.0.0.1:3000/api/men",
-        "http://127.0.0.1:3000/api/jeans",
-        "http://127.0.0.1:3000/api/collection"
+        "https://mock-api-template-zsq1.onrender.com/women",
+        "https://mock-api-template-zsq1.onrender.com/men",
+        "https://mock-api-template-zsq1.onrender.com/jeans",
+        "https://mock-api-template-zsq1.onrender.com/collection"
     ];
 
     // Use Promise.all() to fetch data from all API endpoints simultaneously
