@@ -268,7 +268,7 @@ function display(data){
 
         descAP.addEventListener("click",()=>{
             localStorage.setItem("productdesc",JSON.stringify(item))
-            // window.location.href = 'descriptio.html';
+            window.location.href = 'description.html';
             //add code to send to prod-desc page
         })
 

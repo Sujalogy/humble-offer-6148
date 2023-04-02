@@ -230,6 +230,7 @@ let cartDataSS=JSON.parse(localStorage.getItem("cartDataSS"))||[]
 
 async function getData(){
     fetch('http://127.0.0.1:3000/api/women')
+    // http://127.0.0.1:3000/api/women
     .then(response => response.json())
     .then(data => display(data))
     .catch(error => console.error(error));
@@ -268,7 +269,7 @@ function display(data){
 
         descAP.addEventListener("click",()=>{
             localStorage.setItem("productdesc",JSON.stringify(item))
-            // window.location.href = 'descriptio.html';
+            window.location.href = 'description.html';
             //add code to send to prod-desc page
         })
 
@@ -306,10 +307,10 @@ searchInput.addEventListener("input", () => {
 
     // Call the API endpoints for each category and search for matching products
     const apiEndpoints = [
-        "http://127.0.0.1:3000/api/women",
-        "http://127.0.0.1:3000/api/men",
-        "http://127.0.0.1:3000/api/jeans",
-        "http://127.0.0.1:3000/api/collection"
+        "https://mock-api-template-zsq1.onrender.com/women",
+        "https://mock-api-template-zsq1.onrender.com/men",
+        "https://mock-api-template-zsq1.onrender.com/jeans",
+        "https://mock-api-template-zsq1.onrender.com/collection"
     ];
 
     // Use Promise.all() to fetch data from all API endpoints simultaneously
