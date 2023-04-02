@@ -3,6 +3,11 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 nav {
     z-index: 2;
     position: fixed;
@@ -249,28 +254,6 @@ nav {
 
 /* *? here is the dropdowns individual css for category link {starts} */ 
 
-/* ! ??? need to be removed just for test */
-.empty {
-    width: 100%;
-    height: 142px;
-}
-.other2 {
-    width: 100%;
-    height: 104.5px;
-}
-.vid {
-    /* padding-top: 143px; */
-    width: auto;
-}
-video{
-    /* position: relative; */
-    /* box-sizing: border-box; */
-    width: 100%;
-    z-index: 0;
-}
-/* ! ??? need to be removed just for test */
-
-
 /* * here is the dropdowns for category link {ends} */
 
 .navTwo > .logo img {
@@ -367,7 +350,267 @@ video{
     text-decoration: underline;
 }
 /* ? ===========================here is navTwo {ends}  */
+/* empty div css {starts} */
+.emptyness {
+    width: 100%;
+    height: 143px;
+}
+/* empty div css {ends} */
+/* *-------------------------------------------------------------------- */
+/* ? ===========================here is BODY {starts}  */
+.butts {
+    width: 100%;
+    height: 105px;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 113px;
+    align-items: center;
+} .butts > .one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: -50px;
+    padding-right: 10px;
+    width: 370px;
+    height: 54px;
+    border-radius: 5px;
+    background-color: #172749;
+} .butts > .one p {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+} .butts > .one > .btns > button {
+    width: 70px;
+    padding: 5px;
+    height: 27px;
+    border-radius: 17px;
+    border: none;
+    font-size: 10px;
+} .butts > .one > .btns {
+    width: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 70px);
+}  .butts > .one > .btns > .fe {
+    position: relative;
+    left: 23px;
+}
 
+.check > img{
+    width: 100%;
+} 
+#slides {
+    display: flex;
+
+} #slides > img {
+    width: 421px;
+}
+.yellow {
+    border: 1px solid #000;
+    border-radius: 70px;
+    width: 1225px;
+    height: 86px;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+    border: none;
+} .yellow > img {
+    position: relative;
+    top: 32px;
+    right: 85px;
+    width: 430px;
+} .yellow > button {
+    position: relative;
+    top: 17px;
+    width: 120px;
+    height: 30px;
+    border-radius: 14px;
+    background-color: white;
+    padding: 5px;
+}
+/* ? ===========================here is BODY {ends}  */
+/* *-------------------------------------------------------------------- */
+/* ? ===========================here is FOOTER {starts}  */
+.footer {
+    height: 475px;
+    display: grid;
+    border: 1px solid #e0e0e0;
+} 
+
+.footer > .one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 408px;
+    width: 220px;
+} .footer > .one img {
+    width: 20px;
+} .footer > .one > .arr1 {
+    height: 150px;
+    margin-top: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+}  .footer > .one > .arr1 > .col {
+    display: flex;
+    align-items: center;
+} .footer > .one > .arr1 > .col > a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 10px;
+    color: black;
+} .footer > .one > .arr1 > .col > a:hover {
+    text-decoration: underline;
+}
+
+.footer > .two {
+    /* border: 1px solid #000; */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 412px;
+    width: 220px;
+    display: grid;
+} .footer > .two > .arr2 {
+    display: grid;
+    height: 310px;
+    width: 190px;
+    /* border: 1px solid #000; */
+    margin-top: 58px;
+    margin-left: 17px;
+} .footer > .two > .arr2 > .help > p{
+    font-weight: 600;
+} .footer > .two > .arr2 > .linkss {
+    display: grid;
+    margin-top: -70px;
+    gap: 9px;
+} .footer > .two > .arr2 > .linkss > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+} .footer > .two > .arr2 > .linkss > a:hover {
+    text-decoration: underline;
+}
+
+.footer > .three {
+    /* border: 1px solid #000; */
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 412px;
+    width: 220px;
+} .footer > .three > .arr3 {
+    /* border: 1px solid #000; */
+    display: grid;
+    gap: 24px;
+    margin-top: 58px;
+    margin-left: 25px;
+    /* width: 200px; */
+} .footer > .three > .arr3 > div > p{
+    font-size: 14px;
+    font-weight: 600;
+} .footer > .three > .arr3 > div > a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer > .four {
+    /* border: 1px solid #000; */
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 412px;
+    width: 220px;
+}  .footer > .four > .arr4 {
+    display: grid;
+    height: 250px;
+    width: 190px;
+    /* border: 1px solid #000; */
+    margin-top: 58px;
+    margin-left: 27px;
+} .footer > .four > .arr4 > .about > p{
+    font-weight: 600;
+} .footer > .four > .arr4 > .linkss {
+    display: grid;
+    margin-top: -70px;
+    gap: 9px;
+} .footer > .four > .arr4 > .linkss > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+} .footer > .four > .arr4 > .linkss > a:hover {
+    text-decoration: underline;
+}
+
+.footer > .five {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    height: 412px;
+    width: 375px;
+}  .footer > .five > .arr5 {
+    display: grid;
+    height: 250px;
+    width: 370px;
+    margin-top: 58px;
+} .footer > .five > .arr5 > .about{
+    margin-left: 40px;
+} .footer > .five > .arr5 > .about > p{
+    font-weight: 600;
+} .footer > .five > .arr5 > .socials > img {
+    width: 20px;
+} .footer > .five > .arr5 > .search > input {
+    width: 200px;
+    height: 44px;
+    margin-top: 19px;
+    border-radius: 30px;
+    border:2px solid #dbdbdbfa;
+    border-radius: 30px;
+    font-weight: 550;
+    margin-left: 40px;
+} .footer > .five > .arr5 > .search > button {
+    position: relative;
+    border-radius: 30px;
+    height: 44px;
+    width: 120px;
+    right: 40px;
+    background-color: #005eb8;
+    border: none;
+    color: white;
+} .footer > .five > .arr5 > .para > p {
+    font-size: 12px;
+    text-align: justify;
+    margin-left: 42px;
+    margin-bottom: 2px;
+} .footer > .five > .arr5 > .foll {
+    margin-left: 43px;
+    margin-top: 20px;
+} .footer > .five > .arr5 > .socials {
+    margin-left: 43px;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(5, 35px);
+}
+
+.footer > .six {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 60px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-items: center;
+} .footer > .six > a {
+    text-align: center;
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+/* ? ===========================here is FOOTER {ends}  */
 
 
 /* signout */
@@ -384,5 +627,4 @@ video{
 }
 /* #userIcon:hover{
 
-  
-} */
+} *
