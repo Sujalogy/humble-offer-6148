@@ -35,16 +35,6 @@ let cartData = JSON.parse(localStorage.getItem("cartData")) || [
 }
 ]
 
-// let sum = cartData.length
-
-// console.log(sum)
-// let span = document.getElementsByClassName("spanEl")
-
-// let total = document.getElementById("cart-total");
-// total.textContent= sum
-// console.log(total.textContent)
-// total.append(span)
-
 let sum = cartData.length;
 console.log(sum);
 
