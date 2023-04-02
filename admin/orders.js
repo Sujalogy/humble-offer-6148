@@ -1,4 +1,4 @@
-const Orders = JSON.parse(localStorage.getItem("cart-data")) || [];
+const Orders = JSON.parse(localStorage.getItem("cartData")) || [];
 
 Orders.forEach((order) => {
     const tr = document.createElement("tr");

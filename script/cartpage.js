@@ -35,16 +35,6 @@ let cartData = JSON.parse(localStorage.getItem("cartData")) || [
 }
 ]
 
-// let sum = cartData.length
-
-// console.log(sum)
-// let span = document.getElementsByClassName("spanEl")
-
-// let total = document.getElementById("cart-total");
-// total.textContent= sum
-// console.log(total.textContent)
-// total.append(span)
-
 let sum = cartData.length;
 console.log(sum);
 
@@ -164,6 +154,20 @@ function totalPrice() {
   }
   let subtotalCp= document.getElementById("subtotal");
   subtotalCp.innerText = `$${total}`
+ 
+}
+ 
+estimatedTotal()
+ 
+function estimatedTotal() {
+  let total = 0;
+  let cartData = JSON.parse(localStorage.getItem("cartData"));
+
+  for (let i = 0; i < cartData.length; i++) {
+    total += Number(cartData[i].price);
+  }
+  let estimate= document.getElementById("estimated_total");
+  estimate.innerText =`${total+5+2.92}` 
  
 }
  

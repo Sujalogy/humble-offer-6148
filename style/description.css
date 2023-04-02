@@ -51,6 +51,8 @@
 
 #main_section{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     /* border: 2px solid red; */
 }
 #description{
@@ -154,6 +156,10 @@
    
 
    ul{
+    list-style-type: disc;
+    margin: 30px;
+   }
+   li{
     list-style: disc;
    }
 .edition{
@@ -168,7 +174,8 @@
     /* height: 500px; */
 }
 .cate{
-    color:red
+    color:red;
+    margin-top: 20px;
 }
 .price_div{
     margin-top: -25px;
@@ -189,5 +196,18 @@
     border-radius: 20px;
     font-size: 17px;
     border: none;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+.pleaseDo{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.price_div{
+    margin-top: 15px;
+}
+.color,.size{
+    margin-top: 15px;
+}
+#horizontal{
+    margin:30px;
 }
