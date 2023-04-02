@@ -1,5 +1,5 @@
 let storageData = JSON.parse(localStorage.getItem("productdesc"))
-// let cartData = JSON.parse(localStorage.getItem("cartData")) || []
+let cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 let imgDiv1 = document.getElementById("img1_div")
 let imgDiv2 = document.getElementById("img2_div")
 // console.log(storageData)
@@ -45,8 +45,7 @@ btn.innerText = "Add to bag"
 btn.addEventListener("click",buttonClick)
 function buttonClick(){
     cartData.push(storageData)
-    location.href="./checkoutpage.html"
-   
+    location.href="./cartpage.html"
 }
 
 
