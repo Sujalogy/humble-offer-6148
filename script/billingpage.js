@@ -112,10 +112,10 @@ image1.className+="image1"
 image1.setAttribute("src",`${storageData.img1}`)
 
 
-imgDiv1.append(image1)
+// imgDiv1.append(image1)
 
 
-let descriptionDiv = document.getElementById("description")
+// let descriptionDiv = document.getElementById("description")
 
 let title = document.createElement("h4")
 let price = document.createElement("h4")
@@ -130,13 +130,23 @@ size.innerText ="Size: " + `${storageData.size}`
 price.innerText = `${storageData.price}`
 
 
-descriptionDiv.append(title,color,size,price)
+// descriptionDiv.append(title,color,size,price)
 
 
-let btn = document.getElementById("btn")
-btn.addEventListener("click",clickButton)
-function clickButton()
-{
-  // window.location.replace="./thankyou.html"
-  window.location.replace("./thankyou.html")
-}
+// let btn = document.getElementById("btn")
+// btn.addEventListener("click",clickButton)
+// function clickButton()
+// {
+//   window.location.replace="./thankyou.html"
+//   // window.location.replace("./thankyou.html")
+// }
+
+
+//  taking data from ls
+
+let estimate= JSON.parse(localStorage.getItem("Estimated-Total"))
+let estimated= document.getElementById("estimated_total");
+estimated.innerText= ` $ ${estimate}`
+
+
+//  

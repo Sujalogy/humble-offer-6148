@@ -44,31 +44,32 @@ businessEl.addEventListener('click', handleShippingMethod);
 overnightEl.addEventListener('click', handleShippingMethod);
 
 
-totalPrice()
+// totalPrice()
  
-function totalPrice() {
-  let total = 0;
-  let storageData = JSON.parse(localStorage.getItem("cartData"));
+// function totalPrice() {
+//   let total = 0;
+//   let storageData = JSON.parse(localStorage.getItem("cartData"));
 
-  for (let i = 0; i < storageData.length; i++) {
-    total += Number(storageData[i].price);
-  }
-  let subtotalCp= document.getElementById("subtotal");
-  subtotalCp.innerText = `$ ${total}`
+//   for (let i = 0; i < storageData.length; i++) {
+//     total += Number(storageData[i].price);
+//   }
+//   let subtotalCp= document.getElementById("subtotal");
+//   subtotalCp.innerText = `$ ${total}`
  
-}
-estimatedTotal()
+// }
+// estimatedTotal()
  
-function estimatedTotal() {
-  let total = 0;
-  let cartData = JSON.parse(localStorage.getItem("cartData"));
+// function estimatedTotal() {
+//   let total = 0;
+//   let cartData = JSON.parse(localStorage.getItem("cartData"));
 
-  for (let i = 0; i < cartData.length; i++) {
-    total += Number(cartData[i].price);
-  }
-  let estimate= document.getElementById("estimated_total");
-  estimate.innerText =`${total+5+2.92}` 
+//   for (let i = 0; i < cartData.length; i++) {
+//     total += Number(cartData[i].price);
+//   }
+//   let estimate= document.getElementById("estimated_total");
+//   estimate.innerText =`${total+5+2.92}` 
  
-}
- 
-
+// }
+let ls=JSON.parse(localStorage.getItem("Estimated-Total")) 
+let estimate= document.getElementById("estimated_total");
+estimate.innerText=ls
