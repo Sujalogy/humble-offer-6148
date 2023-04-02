@@ -229,7 +229,7 @@ let cartData=JSON.parse(localStorage.getItem("cartData"))||[]
 let cartDataSS=JSON.parse(localStorage.getItem("cartDataSS"))||[]
 
 async function getData(){
-    fetch('http://127.0.0.1:3000/api/women')
+    fetch('https://mock-api-template-zsq1.onrender.com/women')
     .then(response => response.json())
     .then(data => display(data))
     .catch(error => console.error(error));
@@ -254,9 +254,11 @@ function display(data){
         categAimg.setAttribute("src","./images/categAimg.png")
 
         categAimg.addEventListener("click",()=>{
-            cartData.push(item)
+            cartData.push({...item,quantity:1})
             localStorage.setItem("cartData",JSON.stringify(cartData))
+
             alert("Product Added to Cart...");
+
             cartDataSS.push(item)
             sessionStorage.setItem("cartDataSS",JSON.stringify(cartDataSS))
             // console.log(cartData)
