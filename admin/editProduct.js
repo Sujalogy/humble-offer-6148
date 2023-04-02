@@ -31,7 +31,7 @@ function editProduct(productId, productImg1, productImg2, productCategory, produ
         "color" : productColor,
     };
 
-    fetch(`http://127.0.0.1:3000/api/women/${productId}`, {
+    fetch(`https://mock-api-template-zsq1.onrender.com/product/${productId}`, {
         method : 'PUT',
         headers : {
             'Content-type' : 'application/json'

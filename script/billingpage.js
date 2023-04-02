@@ -28,12 +28,19 @@ let ul = document.getElementById("unorder_list")
 
   let unorder_label = document.getElementById("unorder_label")
   let line1=document.createElement("li")
+  line1.className+="line"
   let line2=document.createElement("li")
+  line2.className+="line1"
   let line3=document.createElement("li")
+  line3.className+="line1"
   let line4=document.createElement("li")
+  line4.className+="line1"
   let line5=document.createElement("li")
+  line5.className+="line1"
   let line6=document.createElement("li")
+  line6.className+="line1"
   let line7=document.createElement("li")
+  line7.className+="line1"
 
   line1.innerText= lsData.fname
   line2.innerText= lsData.lname

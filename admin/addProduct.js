@@ -35,7 +35,7 @@ function addProduct(productId, productImg1, productImg2, productCategory, produc
         "color" : productColor,
     };
 
-    fetch(`http://127.0.0.1:3000/api/women`, {
+    fetch(`https://mock-api-template-zsq1.onrender.com/product`, {
         method : 'POST',
         headers : {
             'Content-type' : 'application/json'

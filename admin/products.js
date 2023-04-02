@@ -8,7 +8,7 @@ window.addEventListener("load", function(e){
 });
 
 function fetchProducts(){
-    fetch(`http://127.0.0.1:3000/api/women`)
+    fetch(`http://127.0.0.1:3000/api/product`)
     .then((res) => {
         return res.json();
     })
@@ -48,12 +48,28 @@ function displayProducts(data){
         removeButton.setAttribute("class", "remove-btn");
 
         removeButton.addEventListener("click", function(){
-            data.splice(index, 1);
-            localStorage.setItem("products", JSON.stringify(data));
-            displayProducts(productsArray);
+            removeProduct(product.id);
+            // data.splice(index, 1);
+            // localStorage.setItem("products", JSON.stringify(data));
+            // displayProducts(productsArray);
         })
 
         productCard.append(productImg, productDesc, productCategory, productPrice, removeButton);
         productsContainer.append(productCard);
     });
+}
+
+function removeProduct(productid){
+    fetch(`https://mock-api-template-zsq1.onrender.com/product/${productid}`, {
+        method : 'DELETE',
+        headers : {
+            'Content-type' : 'application/json'
+        }
+    })
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        console.log(data);
+    })
 }
