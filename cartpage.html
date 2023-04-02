@@ -341,26 +341,31 @@
     <!-- -=-=-=-=--=--= normal nav bar {ends} -=-=-=-=--=--= -->
     <!-- </nav> -->
     <hr>
-    <div  style="margin-top: 150px;">
+    
+    <div  style="margin-top: 150px;" id="shoppingBag">
         <h2 id="total"><span style="padding-left: 30px;">
             Shopping Bag :-  </span><span id="cart-total">0</span></h2>
-        <h4 style="margin-top: 30px;padding-left: 30px;" >ITEMS</h4>
+        <h4 style="margin-top: 30px;padding-left: 30px;" ></h4>
     </div>
-    
     <div  id="main_cart" style="margin-top: 20px;">
         <div id="item">   
-            <div id="img1_div">
-                <!-- append img -->
-            </div>
-            <div id="title">
-                <!-- append desc,color,size -->
-            </div>
-            <div id="quantityEl">
-              <!-- append select quantity -->
-            </div>
-            <div id="priceEl">
-                <!-- append price,comp_value -->
-            </div>
+           
+            <!-- table append data -->
+            <table>
+                <thead>
+                    <tr>
+                    <th id="itemMar">ITEM</th>
+                    <th id="quant">QUANTITY</th>
+                    <th>PRICE</th>
+                </tr>
+                </thead>
+                    
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+
         </div>
    
         <div id="order_summary">
@@ -377,7 +382,7 @@
                         <td id="td_label"><label  id="td_label" for="">Sales tax <span class = "spanEl">$2.92</span></label></td>
                     </tr>
                     <tr>
-                        <td style="font-size: 19px;"><label style="margin-left: 10px;" id="td_label" for=""><b>Estimated total</b><span class = "spanEl"id="cart-total"> </span></label></td>
+                        <td style="font-size: 19px;"><label style="margin-left: 10px;" id="td_label" for=""><b>Estimated total</b><span class = "spanEl" id="cart"> 0</span></label></td>
                     </tr>
                 </table>
             
@@ -385,6 +390,7 @@
         <button id="button_img"><img style="width:50px;"src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png" alt=""></button>
         <p style="font-size: 13px;text-align: center;margin-bottom: 30px;">The safer,easier way to pay</p>
     </div>
+
 
 </body>
 <script src="/script/index.js"></script>

@@ -131,11 +131,13 @@ let login = JSON.parse(localStorage.getItem("login"))||null
 if(login){
     let dropUser = document.getElementById("dropUser")
     dropUser.innerHTML=""
-    let signout= document.getElementById("signout")
-    dropUser.innerHTML=signout.innerHTML
+
+    dropUser.innerHTML=`  <a href="#">My Account</a>
+                                <a href="#" id="sign">Sign Out</a>`
     dropUser.style.height="100px"
     let sign= document.getElementById("sign")
     sign.addEventListener("click",()=>{
+            
         window.location.href="./index.html"
         localStorage.removeItem("login")
         setTimeout(()=>{
@@ -151,9 +153,17 @@ if(login){
 
     // dropUser.style.height="3px"
 }
+// let signoutt= document.getElementById("signout")
+// dropUser.innerHTML=`  <a href="#">My Account</a>
+// <a href="#" id="sign">Sign Out</a>`
+// dropUser.style.height="100px"
+
 
 let signout= document.getElementById("signout")
+if(signout)
+{
 signout.addEventListener("click", signOutFunction)
+}
 
 function signOutFunction(){
     
