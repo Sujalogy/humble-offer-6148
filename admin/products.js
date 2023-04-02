@@ -8,7 +8,7 @@ window.addEventListener("load", function(e){
 });
 
 function fetchProducts(){
-    fetch(`http://127.0.0.1:3000/api/product`)
+    fetch(`https://mock-api-template-zsq1.onrender.com/product`)
     .then((res) => {
         return res.json();
     })
