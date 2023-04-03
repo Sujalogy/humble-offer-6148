@@ -1,39 +1,27 @@
-
 let cartData = JSON.parse(localStorage.getItem("cartData")) || []
 
 total()
 
-
 //  total function is showing how many product added in beg
-function total()
-{
-
+function total(){
   let sum = cartData.length;
   console.log(sum);
   
   let total = document.getElementById("cart-total");
   total.textContent = sum
   console.log(total.textContent);
-
-
-
 }
-
 // let sum = cartData.length
-
 // console.log(sum)
 // let span = document.getElementsByClassName("spanEl")
-
 // let total = document.getElementById("cart-total");
 // total.textContent= sum
 // console.log(total.textContent)
 // total.append(span)
 
-
 CardDataDisplay(cartData)
 
-function CardDataDisplay(data)
-{
+function CardDataDisplay(data){
   
   let tbody = document.querySelector("tbody")
   let subtotal=0
@@ -160,27 +148,24 @@ function CardDataDisplay(data)
     
   })
 }
-
 //  Order Summary functionality
 
-
-
-function OrderSummary()
-{
+function OrderSummary(){
+  // let cartData=JSON.parse(localStorage.getItem("cartData"))||[]
   let subtotalCp= document.getElementById("subtotal");
   subtotalCp.innerHTML=""
   let cart= document.getElementById("cart");
-cart.innerHTML=""
+  cart.innerHTML=""
     let subtotal = 0
     cartData.forEach((el)=>{
           subtotal+= (+el.price)*(+el.quantity)
-
+          console.log(el.price,el.quantity)
     })
     subtotalCp.innerText=subtotal
     cart.innerText=subtotal+7
     let tom = subtotal+7
+    subtotalCp.innerText = subtotal
     localStorage.setItem("Estimated-Total",JSON.stringify(tom))
-  subtotalCp.innerText = subtotal
 
 }
 //  go to  checkoutout page

@@ -254,7 +254,7 @@ function display(data){
         categAimg.setAttribute("src","./images/categAimg.png")
 
         categAimg.addEventListener("click",()=>{
-            cartData.push(item)
+            cartData.push({...item,quantity:1})
             localStorage.setItem("cartData",JSON.stringify(cartData))
             alert("Product Added to Cart...");
             cartDataSS.push(item)

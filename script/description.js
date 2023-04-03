@@ -44,7 +44,8 @@ comp_value.innerText = "Comp.value: $"+ `${((storageData.price)*1.3).toFixed(2)}
 btn.innerText = "Add to bag"
 btn.addEventListener("click",buttonClick)
 function buttonClick(){
-    cartData.push(storageData)
+    cartData.push({...storageData,quantity:1})
+    localStorage.setItem("cartData",JSON.stringify(cartData))
     location.href="./cartpage.html"
 }
 
