@@ -16,3 +16,5 @@
 # Home page 
 ## --$-- SUJAL SINGH THAKUR :-
 ### $=> member-5(TL)
+# Deployment Link
+## [Link] (https://fashion-flare.netlify.app/)
